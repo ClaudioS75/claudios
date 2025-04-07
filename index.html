@@ -1,15 +1,277 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Ejemplo de HTML5" />
+        <meta name="keywords" content="HTML5, CSS3, JavaScript, UNO,Polo Marcos Paz" />
+        <title>Polo universitario Marcos Paz - Claudio Segura ejemplo Diario Distopico</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+        <script language="javascript" type="text/javascript" src="script.js"></script>
+        <meta name="viewport" content="width=device-width">
+        <!--script src="script.js"></script-->
+    </head>
+    <body>
+        <header id="cabecera">
+            <h1>Polo universitario Marcos Paz - Claudio Segura</h1>
+        </header>
+        <header  class="headDiario">
+            <div class="cajadetiempo">Tiempo para las pr&oacute;ximas 24hs: 
+            Soleado con alto &iacute;ndice de esporas.<br><span "font-style: normal;">Viento: 27km/h Este; Temperatura: 21°C; Hum: 62%</span></div>
+            <div class="logo">
+                <img src="img/icorefugio665.png" alt="Refugio 665 Bs. As. Marcos Paz">
+            </div>
+            <div id="tituloh1">Refugio 665</div>
+        </header>
+        <div class="subhead">Bs. As. - 8 de Mayo 2036 - Historia del refugio 665</div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#seccionppal">Principal</a></li>
+                <li><a href="#diario665">Diario</a></li>
+                <li><a href="#origen">Origen del problema?</a></li>
+                <li>Ejemplo 2</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+        <section id="seccionppal">
+            <details>
+                <summary>&iquest;Quienes estamos detr&aacute;s del refugio 665?</summary>
+                <p>
+                El refugio 665 fue inaugurado a fines del 2028 luego de la expansi&oacute;n del hongo Nova. Erigido sobre las bases de un galp&oacute;n de desarrollos alimenticios de la antigua zona de Marcos Paz, que pose&iacute;a los medios para aislar las part&iacute;culas de aire contaminado.<br>
+                 Aqu&iacute; no solo poseemos las m&aacute;scaras sino los extractores y purificadores de aire, sino que tambi&eacute;n la zona no fue afectada por los cultivos de Nonsanto.<br>
+                 Hoy somos apenas 143 sobrevivientes que buscan una soluci&oacute;n al hongo Nova y aun recibimos a supervivientes de Buenos Aires. 
+                </p>
+            </details>
+            <details>
+                <summary>&iquest;Donde estamos?</summary>
+                <p>
+                El refugio 665 est&aacute; ubicado en la antigua f&aacute;brica de productos alimenticios y planta de desarrollos de nuevos nutrientes en la ex Bonafide-Nutrovo adquirida por Laboratorios Farmha S.R.L.<br>
+                est&aacute; en el antiguo kil&oacute;metro 50 de la ruta 200 de Buenos Aires.
+                </p>
+            </details>
+            <hr>
+            <p>Esta es la transmisi&oacute;n de emergencia del refugio tanto formato OGG como MPEG para el sitio.</p>
+            <audio controls autoplay>
+                <source src="emergenciarefugio665.ogg" type="audio/ogg" />
+                <source src="emergenciarefugio665.mp3" type="audio/mpeg" />
+                Su navegador no soporta el tipo de audio del sitio...
+            </audio>
+            <br />
+            <article>
+                <header>
+                    <hgroup>
+                        <h1>Hisotria del refugio</h1>
+                        <h2>Todo por el progreso...</h2>
+                    </hgroup>
+                    <time datetime="2029-01-13" pubdate>publicado 13-01-2029 </time>
+                </header>
+                <figure class="imgnota">
+                    <img src="img/empty.png" alt="Refugio 665"/>
+                <figcaption>Monsantino trigo transg&eacute;nico</figcaption>
+                </figure>
+                <p><strong>C&Oacute;RDOBA</strong>.- Monsantino -ahora controlada por Bajern - ha sido premiada por la <em>Municipalidad de R&iacute;o Cuarto</em>, esto le permite que su planta de gen&eacute;tica en el centro de experimentaci&oacute;n de semillas de un paso al futuro durante este 2023.</p>
+                <p>En 2013 el centro de experimentaci&oacute;n con semillas instalado en R&iacute;o Cuarto comenz&oacute; con el desarrollo de semillas modificadas gen&eacute;ticamente con el hongo Ophiocordyceps unilateralis capaces de persuadir a los depredadores naturales de trigo.<br> De esta manera queda firme la decisi&oacute;n del entonces intendente Juan Jure, de promulgar el uso intensivo de las nuevas semillas en loc campos de R&iacute;o Cuarto.</p>
+                <p><strong>Diario 1</strong> consult&oacute; a la empresa sobre el tema y aunque se excusaron de "no hacer ning&uacute;n comentario sobre la zona a utilizar”, conseguimos donde se realizar&aacute; la primera plantaci&oacute;n de trigo modificado para la producci&oacute;n alimenticia.</p>
+                <footer class="footernota">
+                    <p>coment&aacute;rios (365892)</p>
+                </footer>
+            </article>
+            <search>
+            <form>
+                <input name="busca" id="buscarpag" placeholder="Buscar en la p&aacute;gina" />
+            </form>
+            </search>
+            <br />
+            <label for="file">Porcentaje de p&aacute;gina visitada:</label>
+            <progress id="file" value="32" max="100">32%</progress>
+        </section>
+        <section id="origen">
+            <article class="nota">
+                <header>
+                    <hgroup>
+                        <h1>Gen&eacute;tica agraria</h1>
+                        <h2>NovaGreen un &eacute;xito de Monsantino</h2>
+                    </hgroup>
+                    <time datetime="2023-11-10" pubdate>publicado 10-11-2023 </time>
+                </header>
+                <figure class="imgnota">
+                    <img src="img/semillatrigo.png" alt="Monsantino trigo transg&eacute;nico"/>
+                <figcaption>Monsantino trigo transg&eacute;nico</figcaption>
+                </figure>
+                <p><strong>C&Oacute;RDOBA</strong>.- Monsantino -ahora controlada por Bajern - ha sido premiada por la <em>Municipalidad de R&iacute;o Cuarto</em>, esto le permite que su planta de gen&eacute;tica en el centro de experimentaci&oacute;n de semillas de un paso al futuro durante este 2023.</p>
+                <p>En 2013 el centro de experimentaci&oacute;n con semillas instalado en R&iacute;o Cuarto comenz&oacute; con el desarrollo de semillas modificadas gen&eacute;ticamente con el hongo Ophiocordyceps unilateralis capaces de persuadir a los depredadores naturales de trigo.<br> De esta manera queda firme la decisi&oacute;n del entonces intendente Juan Jure, de promulgar el uso intensivo de las nuevas semillas en loc campos de R&iacute;o Cuarto.</p>
+                <p><strong>Diario 1</strong> consult&oacute; a la empresa sobre el tema y aunque se excusaron de "no hacer ning&uacute;n comentario sobre la zona a utilizar”, conseguimos donde se realizar&aacute; la primera plantaci&oacute;n de trigo modificado para la producci&oacute;n alimenticia.</p>
+                <footer class="footernota">
+                    <p>coment&aacute;rios (138)</p>
+                </footer>
+            </article>
+            <article class="nota">
+                <header>
+                    <hgroup>
+                        <h1>NovaGreen se expande</h1>
+                        <h2>Monsantino se suma a la soja y ma&iacute;z</h2>
+                    </hgroup>
+                    <time datetime="2024-05-24" pubdate>publicado 24-05-2024</time>
+                </header>
+                <figure class="imgnota">
+                    <img src="img/monsantino.png" alt="Monsantino avanza en investigaci&oacute;n de semillas y cultivos"/>
+                <figcaption>Monsantino avanza en investigaci&oacute;n de semillas y cultivos</figcaption>
+                </figure>
+                <p><strong>C&Oacute;RDOBA</strong> - Un estudio de impacto ambiental efectuado por la <em>Direcci&oacute;n de Zoonosis y Ambiente del Ente Descentralizado de Control Municipal de R&iacute;o Cuarto</em>, determin&oacute; que las zonas de plantaci&oacute;n de trigo de <strong>NovaGreen</strong> no est&aacute;n relacionada a las enfermedades e infecciones por el hongo <strong>Ophiocordyceps unilateralis.</strong></p>
+                <p>El informe de la <em>Secretar&iacute;a de Planificaci&oacute;n y Desarrollo Sustentable</em> y el dictamen jur&iacute;dico previo de la Fiscal&iacute;a Municipal. Determinaron que este hongo encontrado en animales se debe a una <em>mutaci&oacute;n gen&eacute;tica del propio hongo</em> y no al trigo <em>Novagreen</em>, aconsejaron eliminar los animales que se detecten infectados en la zona.</p>
+                <p>La intenci&oacute;n de Monsantino es investigar este tema en su centro de investigaci&oacute;n y mejoramiento de variedades de soja e h&iacute;bridos de ma&iacute;z. La empresa siempre sostuvo que la tarea a desarrollar era t&eacute;cnica, sin impacto ambiental.</p>
+                <footer class="footernota">
+                    <p>comentarios (1952)</p>
+                </footer>
+            </article>
+            <article class="nota">
+                <header>
+                    <hgroup>
+                        <h1>&iquest;Monsantino un peligro inminente?</h1>
+                        <h2>Fauna y flora afectada</h2>
+                    </hgroup>
+                    <time datetime="2024-11-13" pubdate>publicado 12-11-2024</time>
+                </header>
+                <figure class="imgnota">
+                    <img src="img/hormiga.jpg" alt="Hormiga afectada por hongo cordyceps en C&oacute;rdoba Argentina."/>
+                    <figcaption>Hormiga afectada por hongo cordyceps en C&oacute;rdoba Argentina.</figcaption>
+                </figure>
+                <p><strong>SANTA FE</strong> - se encontraron m&aacute;s animales afectados por el hongo Ophiocordyceps, una variaci&oacute;n gen&eacute;tica aparentemente utilizadas en semillas en Cordoba. La empresa Nonsantino no dio detalles de sus investigaciones, pero los departamentos del <em>INTA e INTI</em> han alertado que no es casual que que este hongo que solo podia infectar a ciertos insectos ahora se est&aacute; detectando en animales. La secretaria de agricultura de Santa Fe inicio investigaci&oacute;n junto con el <em>ANMAT</em> y otros organismos ante el ins&oacute;lito crecimiento de casos, ya no solo afectando a insectos, sino a los que se alimenten de estos.</p>
+                <br>
+                <br>
+                <footer class="footernota">
+                    <p>coment&aacute;rios (5638)</p>
+                </footer>
+            </article>
+            <article class="nota">
+                <header>
+                    <hgroup>
+                        <h1>Cultivos con extra&ntilde;os hongoos</h1>
+                        <h2>M&aacute;s casos de cultivos con hongos en Mendoza</h2>
+                    </hgroup>
+                    <time datetime="2025-09-25" pubdate>publicado 25-09-2025 </time>
+                </header>
+                <figure class="imgnota">
+                    <img src="img/mendoza.jpeg" alt="Mendoza uva con hongos"/>
+                    <figcaption>Hongo derivado de Ophiocordyceps en uvas</figcaption>
+                </figure>
+                <p><strong>Mendoza</strong>.- Nadie puede saber en este momento que est&aacute; pasando pero cultivos de uva fueron afectados por un hongo, las primeras investigaciones sugieren una derivacion modificada de Ophiocordyceps que no solo soporto el inicio de la primavera de Mendoza, sino tambi&eacute;n supero los calores del zonda.<br>
+                En <em>San Rafael</em> los principales vi&ntilde;edos advierten que vinificar en estas condiciones, significa un gran riesgo para la salud de los consumidores de vino. Durante el presente estudio se observ&oacute; que el g&eacute;nero Alternaria constituye la micobiota predominante en uvas Malbec de la DOC San Rafael, seguido por Cordyceps, Candida, Cladosporium, Penicillium y Aspergillus.<br>Los aislados de Alternaria fueron identificados como Alternaria alternata y el 97 % de las cepas evaluadas produjeron expansi&oacute;n en las muestras de esporas y proliferaci&oacute;n de <strong>Ophiocordyceps</strong>, mostr&oacute; contaminaci&oacute;n en todas las muestras, constituyendo el primer reporte a nivel mundial de la ocurrencia natural de esta "toxina en uvas para vinificar.<br> Mediante un estudio ecofisiol&oacute;gico en un medio simil uva se determin&oacute; que la temperatura y aW &oacute;ptimos para el crecimiento del hongo contin&uacute;a aun superando los 40 grados cent&iacute;grados.<br>En pos de seleccionar un posible agente de control biol&oacute;gico, solo quedo la alternaria de quemar todos los cultivos afectados del ecosistema. M&aacute;s del 52 % de las plantaciones de Mendoza fueron identificadas con este hongo. Llevando a la provincia por primera vez en su historia a una alerta.<br>Por su parte la empresa Hanseniaspora uvarum, Metschnikowia spp determino cerrar los negocios y exportacion de uva y derivados.</p>
+                <footer class="footernota">
+                    <p>coment&aacute;rios (18232)</p>
+                </footer>
+            </article>
+            <article class="nota">
+                <header>
+                    <hgroup>
+                        <h1>Cultivos no son los unicos afectados.</h1>
+                        <h2>Animales se enferman por Ophiocordyceps</h2>
+                    </hgroup>
+                    <time datetime="2025-10-05" pubdate>publicado 05-10-2025 </time>
+                </header>
+                <figure class="imgnota">
+                    <img src="img/perro.jpg" alt="Perro se ve afectado por hongo Ophiocordyceps"/>
+                    <figcaption>&iquest;Mascotas estan en riesgo?</figcaption>
+                </figure>
+                <p><strong>San Luis</strong>.- En San Luis Capital aparecieron los primeros casos de animales dom&eacute;sticos infectados por hongo, por el momento el tratamiento de los veterinarios con fungicidas solo parece aliviar los s&iacute;ntomas de nuestros queridos amigos peludos. <br>Pero en el sur de la provincia de San luis con La Pampa se detectaron casos de ganado tambi&eacute;n afectados.<br>Zoonosis de la provincia atribuye a una contaminacion en la elaboraci&oacute;n de alimento balanceado tanto en mascotas como en animales de granja.<br>Las partidas de alimento estaban &iacute;ntegramente confeccionadas con granos seleccionados de la empresa Monsantino.<br>El gobierno provincial procedi&oacute; a retirar todas las partidas de alimentos e imponer una multa a la empresa por falta de controles.</p>
+                <figure class="imgnota">
+                    <img src="img/vaca.jpg" alt="vaca con presencia de hongo Ophiocordyceps"/>
+                    <figcaption>&iquest;Animales de granja en peligro?</figcaption>
+                </figure>
+                    <footer class="footernota">
+                <p>coment&aacute;rios (1378)</p>
+                </footer>
+            </article>
+            <article class="nota">
+                <header>
+                    <hgroup>
+                        <h1>Monsantino en la mira de todos.</h1>
+                        <h2>El hongo Ophiocordyceps</h2>
+                    </hgroup>
+                    <time datetime="2026-02-05" pubdate>publicado 05-02-2026 </time>
+                </header>
+                <figure class="imgnota">
+                    <img src="img/lengua.jpg" alt="Lengua de una persona con hongo Ophiocordyceps"/>
+                    <figcaption>&iquest;Primeras personas afectadas?</figcaption>
+                </figure>
+                <p><strong>Buenos Aires</strong>.- <strong>Clarion</strong> En una entrevista con el ANMAT no logramos conseguir respuestas a las apariciones de hongos en algunas personas, sobre todo en lengua, cuello y manos.<br>En apariencia se debe a consumo de vino contaminado con el hongo <strong>Nova</strong> como ya se comenta en Argentina y en el mundo. La OMS aun no se expide ya que la afectaci&oacute;n estar&iacute;a controlada y son casos aislados y controlados.<br>Las principales farmac&eacute;uticas por el momento solo ofrecen fungicidas normales como
+                FLUCONAZOL o similares como paliativo para solventar los malestares<br>Por otra parte varias miradas nacionales de organismos de la salud est&aacute;n investigando la propagaci&oacute;n del hongo utilizado por Monsantino para sus granos y cultivos transg&eacute;nicos.</p>
+                <figure class="imgnota">
+                    <img src="img/cuello.jpg" alt="cuello de una persona con hongo Ophiocordyceps"/>
+                    <figcaption>&iquest;Primeras personas afectadas?</figcaption>
+                </figure>
+                <footer class="footernota">
+                    <p>coment&aacute;rios (6502)</p>
+                </footer>
+            </article>
+            <article class="nota">
+                <header>
+                    <hgroup>
+                        <h1>Cultivos de toda Am&eacute;rica afectados.</h1>
+                        <h2>Ophiocordyceps no tiene freno</h2>
+                    </hgroup>
+                    <time datetime="2026-03-13" pubdate>publicado 13-03-2026 </time>
+                </header>
+                <figure class="imgnota">
+                    <img src="img/cultivos.jpg" alt="Cultivos afectados por el hongo Ophiocordyceps"/>
+                    <figcaption>&iquest;Primeras personas afectadas?</figcaption>
+                </figure>
+                <p><strong>Mexico</strong>.- <strong>Acapulco Express</strong>El malestar de los agricultores de Chapultepec no de deja de evidenciar en sus rostros, cosechar completas p&eacute;rdidas por los granos transg&eacute;nicos de Monsantino, y esto no se queda aqu&oacute;&iacute;. Tambi&eacute;n se evidencio contagios en las manos de quienes simplemente manipulan los granos y plantas. Los organismos gubernamentales est&aacute;n en alerta por la afectaci&oacute;n de las personas y los alimentos.</p>
+                <figure class="imgnota">
+                    <img src="img/mano.webp" alt="cuello de una persona con hongo Ophiocordyceps"/>
+                    <figcaption>&iquest;Primeras personas afectadas?</figcaption>
+                </figure>
+                <footer class="footernota">
+                    <p>coment&aacute;rios (6502)</p>
+                </footer>
+            </article>
+        </section>
+        <!--section id="diario665">
+        <div id="mainDiv"></div>
+        <br />
+        <button onclick="botonclick()">Click me</button>
+        <h1>Porfolio de im&aacute;genes</h1>
 
-<head>
-	<title>Polo universitario Marcos Paz - Claudio Segura</title>
-	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-	<meta name="generator" content="Claudio Segura" />
-</head>
+        <p>Cambie el ta&ntilde;o del navegador, para mostrar im&aacute;genes seg&uacute;n la dimensi&oacute;n de la ventana...</p>
+        <picture>
+        <source media="(min-width:650px)" srcset="img_pink_flowers.jpg" />
+        <source media="(min-width:465px)" srcset="img_white_flower.jpg" />
+        <img src="img_orange_flowers.jpg" alt="Flowers" style="width: auto" />
+        </picture>
+        <p>Clic en la computadora o el Tel&eacute;fono o en el caf&eacute;...:</p>
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379" />
+        <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html" />
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html" />
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html" />
+        </map>
+        <article>
+        <header>
+        <hgroup>
+        <h1>Gen&eacute;tica agraria</h1>
+        <h2>NovaGreen un &eacute;xito de Monsantino</h2>
+        </hgroup>
+        <time datetime="2023-11-10" pubdate>publicado 10-11-2023 </time>
+        </header>
+        <figure class="imgnota">
+        <img src="img/semillatrigo.png" alt="Monsantino trigo transg&eacute;nico"/>
+        <figcaption>Monsantino trigo transg&eacute;nico</figcaption>
+        </figure>
+        <p><strong>C&Oacute;RDOBA</strong>.- Monsantino -ahora controlada por Bajern - ha sido premiada por la <em>Municipalidad de R&iacute;o Cuarto</em>, esto le permite que su planta de gen&eacute;tica en el centro de experimentaci&oacute;n de semillas de un paso al futuro durante este 2023.</p>
+        <p>En 2013 el centro de experimentaci&oacute;n con semillas instalado en R&iacute;o Cuarto comenz&oacute; con el desarrollo de semillas modificadas gen&eacute;ticamente con el hongo Ophiocordyceps unilaterales capaces de persuadir a los depredadores naturales de trigo.<br> De esta manera queda firme la decisi&oacute;n del entonces intendente Juan Jure, de promulgar el uso intensivo de las nuevas semillas en loc campos de R&iacute;o Cuarto.</p>
+        <p><strong>Diario 1</strong> consult&oacute; a la empresa sobre el tema y aunque se excusaron de "no hacer ning&uacute;n comentario sobre la zona a utilizar”, conseguimos donde se realizara la primera plantaci&oacute;n de trigo modificado para la producci&oacute;n alimenticia.</p>
 
-<body>
-	<h1>Hola Mundo!</h1>
-	<p>Polo universitario Marcos Paz - Claudio Segura</p>
-</body>
-
+        <footer class="footernota">
+        <p>coment&aacute;rios (138)</p>
+        </footer>
+        </article>
+        </section>
+        <!--aside id="columna">
+        <blockquote>Mensaje n&uacute;mero uno</blockquote>
+        <blockquote>Mensaje n&uacute;mero dos</blockquote>
+        </aside-->
+        <footer id="pie">Derechos Reservados &copy; 2025 - Claudio Segura&nbsp;<a id="muestra-hora"></a></footer>
+    </body>
 </html>
