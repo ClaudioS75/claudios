@@ -1,0 +1,45 @@
+<p><strong>xx</strong></p>
+<article class="nota">
+<header>
+<hgroup>
+<h1>xx</h1>
+<h2>xx</h2>
+</hgroup>
+<time datetime="2026-04-05" pubdate>publicado xx</time>
+</header>
+<figure class="imgnota">
+<img src="img/lengua.jpg" alt="Lengua de una persona con hongo Ophiocordyceps" />
+<figcaption>&iquest;Primeras personas afectadas?</figcaption>
+</figure>
+<p>
+xx</p>
+<blockquote>
+<p>xx
+</p>
+<br />
+<div class="llamadas">
+xx
+</div>
+</blockquote>
+<p>
+xx</p>
+<blockquote>
+<p>
+xx
+</p>
+<br />
+<div class="llamadas">
+xx
+</div>
+</blockquote>
+<p>
+xx
+</p>
+<figure class="imgnota">
+<img src="img/cuello.jpg" alt="cuello de una persona con hongo Ophiocordyceps" />
+<figcaption>&iquest;Primeras personas afectadas?</figcaption>
+</figure>
+<footer class="footernota">
+<p>comentarios (xxx)</p>
+</footer>
+</article>
