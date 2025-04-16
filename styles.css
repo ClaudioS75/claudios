@@ -1,13 +1,14 @@
 :root {
-	--principal-color: #55e861;
-	--secundario-color: #87c38f;
-	--claro-color: #eee;
+	--principal-color: #b8ecb5;
+	--secundario-color: #d1ffd7;
+	--claro-color: #c3e3cc;
 	--negrita-color: #414029;
-	--error-color: #C65226;
-	--clarito-color: #90eead;
+	--error-color: #d35120;
+	--clarito-color: #e7efe9;
 	--font-primary: "Courier New", Courier, monospace;
-	--font-secondary: "DejaVu Sans Mono", monospace;
-	--font-llamada:font-family: Impact, Charcoal, sans-serif;
+	--font-secondary:Arial, sans-serif;
+	/*--font-llamada:font-family:Impact, Charcoal, sans-serif;*/
+	--font-llamada:"Labrada", serif; /* de 100 a 900 */	
 	--border-radius: 10px;
 	--img-notapx:300px;
 }
@@ -48,7 +49,13 @@ blockquote {
     padding-left: 15px;
     border-left: 3px solid #F63;
 }
-blockquote p { position: relative; }
+blockquote p { 
+position: relative; 
+font-family: var(--font-secondary);
+  font-weight: 10px;
+  /*font-style: normal;*/
+  
+}
 blockquote p:before {
 	content: '\201C';
 	font-size:30px;
@@ -186,6 +193,19 @@ column-width: 25em;
 	-moz-column-rule: 1px solid rgba(26,185,1,0.34);
 	column-rule: 1px solid rgba(26,185,1,0.34);	
 }
+.notaalter h1 {
+	  font-family: "Bodoni Moda SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.notaalter h2 {
+	  font-family: "Bodoni Moda SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 .nota{
 	background-image: url("img/fondodiario2.png");/*url("img/fondodiario1.png"),url("img/fondodiario2.png"); */
 	padding: 20px;
@@ -205,6 +225,16 @@ column-width: 25em;
 	-webkit-column-rule: 1px solid rgba(26,185,1,0.34);
 	-moz-column-rule: 1px solid rgba(26,185,1,0.34);
 	column-rule: 1px solid rgba(26,185,1,0.34);	
+}
+.nota h1{
+	font-family: "Cinzel", serif; /* 400 a 900*/
+  /*font-optical-sizing: auto;*/
+	  color:white;
+}
+.nota h2{
+	font-family: "Cinzel", serif;
+  /*font-optical-sizing: auto;*/
+  font-style: normal;
 }
 
 .imgnota {
@@ -308,14 +338,17 @@ column-width: 25em;
 
 .llamadas {
 	font-family: var(--font-llamada);
-	font-size: 11px;
+	/*font-size: 600;
 	letter-spacing: 2px;
 	word-spacing: 2px;
-	color: #000000;
-	font-weight: normal;
+	* font-weight: normal;
 	font-style: oblique;
 	font-variant: normal;
 	text-transform: capitalize;
+	*/
+	color: #000000;
+  font-weight: 300;
+  font-style: normal;
 }
 .listasinpuntos {
 	list-style-type: none;
@@ -339,4 +372,73 @@ height: 0;
 border-bottom: 30px solid #55f;
 border-right: 20px solid transparent;
 border-left: 20px solid transparent;
+}
+/* contacto */
+.mapwrapper {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 50px auto 50px auto;
+}
+aside {
+  /*width: 30%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+  */
+ /*height: 100vh;*/
+ height:29%;
+  /*width: 350px;*/
+  width:30%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+ /* justify-content: space-between;*/
+  flex-direction: column;
+}
+
+aside > p {
+  margin: 0.5rem;
+}
+aside, #main {
+ /*width: 70%;
+	padding-left: 15px;
+  margin-left: 15px;
+  float: left;*/
+  /*width: 70%;*/
+  display: inline-block;
+  vertical-align: top;
+ /* border: 1px solid blue*/
+}
+#main{
+	height:10%;
+  /*width: 350px;*/
+  width:69%
+}
+.googlemap {
+  width: 100%;
+  height: 100%;
+}
+ .map {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 100%; /* Para asegurarse de que el mapa no exceda el tamaño del contenedor */
+            overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del contenedor */
+        }
+
+#layer-2 {
+    height: 200px;
+}
+
+/* google fonts */
+.letracursivadiario {
+   font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
