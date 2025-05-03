@@ -1,601 +1,719 @@
 <!doctype html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="description" content="Ejemplo de HTML5" />
-        <meta name="keywords" content="HTML5, CSS3, JavaScript, UNO,Polo Marcos Paz" />
-        <title>Polo universitario Marcos Paz - Claudio Segura ejemplo Diario Distopico</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Labrada:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap"
-            rel="stylesheet" />
-        <link rel="stylesheet" href="styles.css" />
-        <script type="text/javascript" src="script.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
+<html lang="es" data-bs-theme="dark">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Ejemplo de HTML5" />
+		<meta name="keywords" content="HTML5, CSS3, JavaScript, UNO,Polo Marcos Paz" />
+		<title>Polo universitario Marcos Paz - Claudio Segura ejemplo Diario Distopico</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Labrada:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<!-- popper -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<!-- BOOTSTRAP 5 -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+		<!--
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+		-->
+		<!-- BOOTSTRAP 5 Bundle js-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+		<!-- SCROOLL REVEAL JS LIBRARY CDN -->
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+				<!-- AOS animacion -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- personales -->
+		<link rel="stylesheet" href="styles.css" />
+		<script type="text/javascript" src="script.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
     <body>
-        <!--header id="cabecera">
-            <h1>Disculpe Profesor Pedro, web en construcci&oacute;n: Polo universitario Marcos Paz - Claudio Segura</h1>
-        </header-->
-        <header class="headDiario">
-            <div class="cajadetiempo">
-                Tiempo para las pr&oacute;ximas 24hs: Soleado con alto &iacute;ndice de esporas.<br /><span
-                    style="font-style: normal"
-                    >Viento: 27km/h Este; Temperatura: 21&deg;C; Hum: 62%</span
-                >
-            </div>
-            <div class="logo">
-                <img src="img/icorefugio665.png" alt="Refugio 665 Bs. As. Marcos Paz" />
-            </div>
-            <div id="tituloh1">Refugio 665</div>
-        </header>
-        <div class="subhead">Bs. As. - 8 de Noviembre 2036 - Historia del refugio 665</div>
-        <nav id="menu">
-            <ul>
-                <li><a href="diario665.html">Diario del refugio</a></li>
-                <li><a href="historia665.html">Historia del refugio</a></li>
-                <li><a href="#origen">Diarios y Noticias hist&oacute;ricas</a></li>
-                <li>Ejemplo 2</li>
-                 <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <main>
-        <p>
-            Este es un racconto de noticias, restos de informes y algunas comunicaciones que tenemos. Con estos datos tratamos de armar la historia del hongo nova y su horigen con novagen-12 y seguramente logremos encontrar la solucion si el tiempo y nuestra salud lo permiten.
-        </p>
-        <section id="origen">
-            <article class="nota">
-                <header>
-                    <hgroup>
-                        <h1><em>Diario 1</em> – Secci&oacute;n: Gen&eacute;tica Agraria</h1>
-                        <h2>NovaGreen, el nuevo &eacute;xito de Monsantino que promete revolucionar el trigo argentino</h2>
-                    </hgroup>
-                    <time datetime="2023-11-10" pubdate>publicado 10-11-2023 </time>
-                </header>
-                <figure class="imgnota">
-                    <img src="img/semillatrigo.png" alt="Monsantino trigo transg&eacute;nico" />
-                    <figcaption>Monsantino trigo transg&eacute;nico</figcaption>
-                </figure>
-                <p>
-                    <em>
-                        El innovador desarrollo biotecnol&oacute;gico fue premiado por la Municipalidad de R&iacute;o Cuarto y
-                        comenzar&aacute; su fase de producci&oacute;n en 2024.</em
-                    ><br />
-                    <strong>C&oacute;RDOBA.–</strong> La empresa biotecnol&oacute;gica <em>Monsantino</em>, recientemente adquirida
-                    por el conglomerado alem&aacute;n <em>Bajern AG</em>, ha sido galardonada por la Municipalidad de R&iacute;o
-                    Cuarto por su proyecto <em>NovaGreen</em>, una nueva variedad de trigo transg&eacute;nico que promete ser
-                    <strong><em>“el cultivo del futuro”</em></strong
-                    >.<br />
-                    La distinci&oacute;n, entregada durante la ExpoAgroLocal 2023, habilita a la planta de gen&eacute;tica de
-                    Monsantino –ubicada en el Centro de Experimentaci&oacute;n de Semillas fundado en 2013 – a de iniciar la
-                    primera fase de implementaci&oacute;n a gran escala.<br />
-                    El desarrollo se basa en la modificaci&oacute;n gen&eacute;tica del trigo mediante la incorporaci&oacute;n del
-                    <em>Ophiocordyceps unilateralis</em>, un hongo conocido por su capacidad de alterar el
-                    comportamiento de ciertos insectos, adaptado aqu&iacute; para repeler de forma “natural” a los depredadores
-                    del cereal.
-                </p>
-                <blockquote>
-                    <p>
-                        Estamos ante un avance hist&oacute;rico en biotecnolog&iacute;a agraria, que permite reducir dr&aacute;sticamente el
-                        uso de agroqu&iacute;micos sin comprometer el rendimiento
-                    </p>
-                    <br />
-                    <div class="llamadas">, explic&oacute; el vocero de la empresa, en un evento cerrado a la prensa.</div>
-                </blockquote>
-
-                <p>
-                    Aunque la compañ&iacute;a declin&oacute; responder preguntas sobre las ubicaciones espec&iacute;ficas de las zonas de
-                    prueba, fuentes cercanas al municipio confirmaron que el primer lote de siembra experimental se
-                    instalar&aacute; en los campos al este del departamento R&iacute;o Cuarto, con vistas a extenderse a toda la
-                    regi&oacute;n sur de C&oacute;rdoba para el ciclo 2024.<br />
-                    La medida ratifica el decreto impulsado en su momento por el entonces intendente Juan Jure, que
-                    promov&iacute;a el uso intensivo de semillas gen&eacute;ticamente modificadas en zonas rurales bajo convenios de
-                    producci&oacute;n controlada. Expertos locales celebran el avance, aunque algunos sectores ambientalistas
-                    han expresado cautela ante la escasa informaci&oacute;n p&uacute;blica sobre los protocolos de bioseguridad y
-                    control ecol&oacute;gico.
-                </p>
-                <blockquote>
-                    <p>No estamos en contra de la ciencia, pero s&iacute; de la opacidad</p>
-                    <br />
-                    <div class="llamadas">
-                        , señal&oacute; en un comunicado la Asociaci&oacute;n VerdeSur, quien solicit&oacute; acceso a los estudios
-                        toxicol&oacute;gicos previos a la liberaci&oacute;n del cultivo.
-                    </div>
-                </blockquote>
-
-                <footer class="footernota">
-                    <p>coment&aacute;rios (138)</p>
-                </footer>
-            </article>
-            <p><strong>Recorte de Diario – "La Naci&oacute;n", 12 de Noviembre de 2023</strong></p>
-<article class="nota">
-                <header>
-                    <hgroup>
-                        <h1>Monsantino lanza NovaGreen-12: &iquest;el futuro del trigo argentino?</h1>
-                        <h2>Cultivo resistente al clima extremo promete aumentar la producci&oacute;n un 40%.</h2>
-                    </hgroup>
-                    <time datetime="2023-11-12" pubdate>publicado 12-11-2023</time>
-                </header>
-                <figure class="imgnota">
-                    <img
-                        src="img/monsantino.png"
-                        alt="Monsantino avanza en investigaci&oacute;n de semillas y cultivos" />
-                    <figcaption>Monsantino avanza en investigaci&oacute;n de semillas y cultivos</figcaption>
-                </figure>
-                <p>
-                    “Este trigo, desarrollado con biotecnolog&iacute;a de punta, incluye un agente simbi&oacute;tico que protege la planta de plagas sin necesidad de pesticidas. Seg&uacute;n la empresa, es 100% seguro para el consumo humano”, dijo en conferencia el Dr. Ren&eacute; Pagani, director de investigaci&oacute;n de Monsantino Cono Sur.
-                </p>
-                <footer class="footernota">
-                    <p>comentarios (1952)</p>
-                </footer>
-            </article>
-            <p><strong>Informe confidencial interno – Ministerio de Agricultura, 02/11/2023</strong></p>
-           
-            <article class="nota">
-                <header>
-                    <hgroup>
-                        <h1>An&aacute;lisis preliminar de cepa modificada en NovaGreen-12</h1>
-                    </hgroup>
-                    <time datetime="2023-11-02" pubdate>publicado 02-11-2023</time>
-                </header>
-                      <p>"
-                      …la modificaci&oacute;n gen&eacute;tica realizada sobre el hongo O. unilateralis muestra signos de inestabilidad. Detectamos material gen&eacute;tico adaptable en ambientes con alta salinidad, temperaturas bajo cero y exposici&oacute;n prolongada a radiaci&oacute;n UV…
-                      "
-                    </p>
-                    <p>
-						"
-						…recomendamos una moratoria temporal en la exportaci&oacute;n del lote NG12 hasta realizar m&aacute;s pruebas en humanos y animales...
-						"
-						</p>
-                    <br />
-                    <div class="llamadas">
-                        Archivo clasificado - Acceso restringido
-                    </div>
-                
-                <footer class="footernota">
-                    <p>comentarios (1952)</p>
-                </footer>
-            </article>
-           <p><strong>Diario 1 – Secci&oacute;n: Ciencia y Producci&oacute;n.</strong></p>
-<article class="nota">
-                <header>
-                    <hgroup>
-                        <h1> NovaGreen se expande: Monsantino inicia pruebas en soja y ma&iacute;z
-</h1>
-                        <h2>Un informe municipal descarta v&iacute;nculo entre infecciones recientes y los cultivos de trigo transg&eacute;nico.
-</h2>
-                    </hgroup>
-                    <time datetime="2024-05-24" pubdate>publicado 24 de mayo de 2024</time>
-                </header>
-               <figure class="imgnota">
-                    <img
-                        src="img/hormiga.jpg"
-                        alt="Hormiga afectada por hongo cordyceps en C&oacute;rdoba Argentina." />
-                    <figcaption>Hormiga afectada por hongo cordyceps en C&oacute;rdoba Argentina.</figcaption>
-                </figure>
-                <p>
-                   <strong>C&Oacute;RDOBA</strong>.– En medio de crecientes rumores sobre s&iacute;ntomas inusuales detectados en animales rurales, la empresa <em>Monsantino</em> anunci&oacute; la expansi&oacute;n de su l&iacute;nea NovaGreen hacia variedades modificadas de soja y ma&iacute;z, desarrolladas en su centro experimental de R&iacute;o Cuarto.<br>
-La decisi&oacute;n se conoce apenas d&iacute;as despu&eacute;s de la publicaci&oacute;n de un <strong>informe ambiental oficial</strong> elaborado por la Direcci&oacute;n de Zoonosis y Ambiente del Ente Descentralizado de Control Municipal, que concluye que <strong><em>“no existe relaci&oacute;n directa”</em></strong> entre los casos de infecci&oacute;n detectados en fauna silvestre y dom&eacute;stica, y los cultivos de trigo NovaGreen-12 utilizados en la regi&oacute;n.</p>
-	<blockquote>
-<p>La cepa del hongo presente en los animales infectados presenta mutaciones propias, ajenas a la modificaci&oacute;n gen&eacute;tica del cereal</p>
-                    <br />
-                    <div class="llamadas">
-                       ,sostiene el informe firmado por la Secretar&iacute;a de Planificaci&oacute;n y Desarrollo Sustentable, junto al dictamen jur&iacute;dico de la Fiscal&iacute;a Municipal.
-                    </div>
-                </blockquote>
-
-<p>
-El documento recomienda el sacrificio inmediato de animales infectados en zonas cercanas a los campos de siembra, como medida preventiva, pero no limita la expansi&oacute;n del uso de las semillas modificadas en otros cultivos.
-Desde Monsantino aseguraron que <strong>“la tarea a desarrollar es de car&aacute;cter estrictamente t&eacute;cnico, sin consecuencias ambientales demostradas”</strong>, y confirmaron que ya se est&aacute;n realizando las primeras pruebas de adaptaci&oacute;n en h&iacute;bridos de ma&iacute;z y variedades transg&eacute;nicas de soja para el ciclo 2025.<br>
-Sectores acad&eacute;micos y ONGs ambientalistas manifestaron cierta preocupaci&oacute;n ante la falta de estudios independientes sobre los efectos del hongo simbi&oacute;tico fuera del ecosistema del trigo.</p>
-<blockquote>
-<p>Est&aacute;n desarrollando organismos extremadamente complejos, con material gen&eacute;tico f&uacute;ngico, sin protocolos internacionales claros. Esto no es solo soja y ma&iacute;z, est&aacute;n jugando a la alquimia con la base de nuestra alimentaci&oacute;n</p>
-                    <br />
-                    <div class="llamadas">
-                       , advirti&oacute; el Dr. Carlos Montero, bi&oacute;logo molecular de la Universidad Nacional del Litoral.
-                    </div>
-                </blockquote>
-                <footer class="footernota">
-                    <p>comentarios (7352)</p>
-                </footer>
-            </article>
-                       <p><strong>La Voz de Rosario – Secci&oacute;n: Medioambiente y Salud P&uacute;blica Fecha: 12 de noviembre de 2024</strong></p>
-<article class="nota">
-                <header>
-                    <hgroup>
-                        <h1>&iquest;Monsantino, un peligro inminente? Crece la preocupaci&oacute;n por la expansi&oacute;n del hongo Ophiocordyceps en Santa Fe</h1>
-                        <h2>Organismos oficiales investigan la posible relaci&oacute;n entre semillas transg&eacute;nicas y un brote inusual de infecciones en la fauna local.</h2>
-                    </hgroup>
-                    <time datetime="2024-11-12" pubdate>publicado 12-11-2024</time>
-                </header>
-                <figure class="imgnota">
-                    <img
-                        src="img/arania640x480.jpg"
-                        alt="Preocupaci&oacute;n por fauna afectada por hongos" />
-                    <figcaption>Preocupaci&oacute;n por fauna afectada por hongos</figcaption>
-                </figure>
-                <p>
-                    <strong>SANTA FE</strong>.– La aparici&oacute;n de m&uacute;ltiples animales infectados por una variante del hongo Ophiocordyceps unilateralis encendi&oacute; las alarmas entre especialistas en zoonosis, quienes advierten que el pat&oacute;geno ha comenzado a extenderse m&aacute;s all&aacute; de su hu&eacute;sped natural, afectando ahora a especies mayores, incluso mam&iacute;feros pequeños y aves carroñeras.<br>
-Si bien este hongo es conocido por su capacidad de alterar el comportamiento de insectos, en especial hormigas, cient&iacute;ficos del INTA y el INTI aseguran que las muestras obtenidas en la zona presentan una <strong>mutaci&oacute;n in&eacute;dita</strong> que podr&iacute;a estar relacionada con las cepas utilizadas en desarrollos biotecnol&oacute;gicos recientes en la provincia de C&oacute;rdoba.
-                </p>
-					<blockquote>
-                    <p>
-                        “No es casual que estemos viendo esta expansi&oacute;n justo ahora, y justo aqu&iacute;, donde llegaron granos y forraje modificados provenientes del sur cordob&eacute;s”
-                    </p>
-                    <br />
-                    <div class="llamadas">
-                       , afirm&oacute; bajo reserva un t&eacute;cnico del INTA, que participa de las primeras investigaciones de campo.
-                    </div>
-                </blockquote>
-                <p>A pesar de los crecientes reportes, la empresa <em>Monsantino</em> se neg&oacute; a brindar declaraciones y no ha revelado detalles sobre los compuestos gen&eacute;ticos utilizados en sus programas de modificaci&oacute;n de trigo, soja y ma&iacute;z bajo la l&iacute;nea NovaGreen.<br>
-En respuesta, la Secretar&iacute;a de Agricultura de Santa Fe anunci&oacute; la apertura de una investigaci&oacute;n formal en conjunto con la <strong>ANMAT, el SENASA y otras agencias federales</strong>, ante lo que califican como <strong>“un comportamiento f&uacute;ngico ins&oacute;lito y potencialmente disruptivo para los ecosistemas rurales”</strong>.<br>
-Fuentes cercanas al caso aseguran que entre los animales afectados hay gatos, perros rurales y aves de corral, que <strong>presentan signos de desorientaci&oacute;n, agresividad y una extraña esporulaci&oacute;n en zonas h&uacute;medas del cuerpo</strong>. En un caso registrado en Villa Constituci&oacute;n, un caballo debi&oacute; ser sacrificado tras convulsionar y atacar a su propio dueño.</p>
-	<blockquote>
-                    <p>
-                        Estamos viendo s&iacute;ntomas que antes solo se atribu&iacute;an a infecciones neurol&oacute;gicas virales, pero los cultivos cercanos est&aacute;n mostrando señales de esporas activas
-                    </p>
-                    <br />
-                    <div class="llamadas">
-                       , explic&oacute; el veterinario Lucas Peralta, que atiende en la zona rural de Arroyo Seco.
-                    </div>
-                </blockquote>
-
-                <footer class="footernota">
-                    <p>comentarios (5852)</p>
-                </footer>
-            </article>
-            
-            
-    
-
-
-            
-<p><strong> Diario Uno – Secci&oacute;n: Campo & Producci&oacute;n</strong></p>
-<article class="nota">
-                <header>
-                    <hgroup>
-                        <h1>Alerta en Mendoza: viñedos afectados por hongo mutado resistente al calor</h1>
-                        <h2>Un estudio detecta una cepa derivada del Ophiocordyceps en uvas Malbec, capaz de sobrevivir al calor del zonda. Exportadores suspenden operaciones.</h2>
-                    </hgroup>
-                    <time datetime="2025-09-25" pubdate>publicado 25 de septiembre de 2025</time>
-                </header>
-                <figure class="imgnota">
-                    <img src="img/mendoza.jpeg" alt="Mendoza uva con hongos" />
-                    <figcaption>Hongo derivado de Ophiocordyceps en uvas</figcaption>
-                </figure>
-                <p>
-                   <strong>MENDOZA</strong>.– Por primera vez en la historia vitivin&iacute;cola de la provincia, los cultivos de uva entran en estado de <strong>alerta roja</strong> tras detectarse una proliferaci&oacute;n masiva de hongos en racimos destinados a vinificaci&oacute;n, entre ellos una <strong>cepa mutada del g&eacute;nero Ophiocordyceps resistente a temperaturas extremas</strong>.<br>
-La aparici&oacute;n del hongo, relacionada gen&eacute;ticamente con cepas utilizadas en semillas transg&eacute;nicas del centro del pa&iacute;s, ha causado <strong>estragos en viñedos de San Rafael</strong>, afectando m&aacute;s del 52% de la superficie productiva, y generando un freno inmediato a la exportaci&oacute;n de uvas y derivados.
-
-                </p>
-					<blockquote>
-                    <p>
-                        Nunca vimos algo as&iacute;. Este hongo no solo sobrevivi&oacute; al calor seco del viento zonda, sino que coloniz&oacute; la fruta en plena maduraci&oacute;n, afectando su qu&iacute;mica interna y liberando toxinas peligrosas para el consumo humano
-                    </p>
-                    <br />
-                    <div class="llamadas">
-                       , detall&oacute; el en&oacute;logo Juan Vald&eacute;s, investigador del Consejo Vitivin&iacute;cola Provincial.
-                    </div>
-                </blockquote>
-                <p>
-					El an&aacute;lisis microbiol&oacute;gico revel&oacute; que, adem&aacute;s de la micobiota habitual compuesta por Alternaria, Cladosporium, Candida y Aspergillus, las muestras de uva Malbec presentaban una colonizaci&oacute;n activa de esporas del hongo Ophiocordyceps, algo in&eacute;dito a nivel mundial.</p>
-					<blockquote>
-                    <p>
-                       <strong>"Estamos frente a una toxina de origen f&uacute;ngico con un nivel de adaptabilidad alarmante”</strong>, señal&oacute; el equipo del Laboratorio de Microbiolog&iacute;a Enol&oacute;gica de la DOC San Rafael. <strong>“Los aislados crecieron incluso a temperaturas superiores a los 40 °C, algo jam&aacute;s registrado en este tipo de hongos"</strong>.
-                    </p>
-                    <br />
-                                  </blockquote>
-<p>
-Como medida extrema, se recomend&oacute; la quema total de los cultivos contaminados, descartando completamente m&eacute;todos qu&iacute;micos de control. Solo la incineraci&oacute;n completa logr&oacute; detener la proliferaci&oacute;n durante los ensayos en laboratorio.<br>
-El impacto econ&oacute;mico no se hizo esperar. La empresa Hanseniaspora Uvarum, junto a otras firmas del cl&uacute;ster Mendoza WineTech, cerraron temporalmente operaciones y suspendieron toda exportaci&oacute;n de uva y vino hasta nuevo aviso.</p>
-<blockquote>
-                    <p>
-                       Esto no es solo un problema agr&iacute;cola. Es un golpe a la cultura, a la econom&iacute;a y a la confianza en los organismos de control. &iquest;C&oacute;mo lleg&oacute; este hongo ac&aacute;? &iquest;Qui&eacute;n lo trajo? &iquest;Y por qu&eacute; nadie lo detuvo?
-                    </p>
-                    <br />
-                    <div class="llamadas">
-                       , expres&oacute; el gobernador Gustavo Ram&iacute;rez en una conferencia urgente.
-                    </div>
-                                  </blockquote>
-
-					
-                <footer class="footernota">
-                    <p>comentarios (1952)</p>
-                </footer>
-            </article>
-
-
-    <p><strong>Diario de la Rep&uacute;blica – Secci&oacute;n: Sociedad y Salud</strong></p>
-<article class="nota">
-                <header>
-                    <hgroup>
-                        <h1>Animales afectados por el hongo Ophiocordyceps: veterinarios en alerta</h1>
-                        <h2>Mascotas y ganado presentan s&iacute;ntomas f&uacute;ngicos vinculados a alimentos balanceados elaborados con granos modificados.</h2>
-                    </hgroup>
-                    <time datetime="2025-10-05" pubdate>publicado 5 de octubre de 2025</time>
-                </header>
-                <figure class="imgnota">
-                    <img src="img/perro.jpg" alt="Perro se ve afectado por hongo Ophiocordyceps" />
-                    <figcaption>&iquest;Mascotas est&aacute;n en riesgo?</figcaption>
-                </figure>
-                <p>
-                   <strong>SAN LUIS</strong>.– La preocupaci&oacute;n en la provincia crece tras confirmarse <strong>los primeros casos de animales dom&eacute;sticos y de granja infectados por una cepa agresiva del hongo Ophiocordyceps unilateralis</strong>, el mismo que ya ha sido detectado en cultivos de todo el pa&iacute;s.<br>
-En im&aacute;genes difundidas por este medio, puede verse a un perro mestizo con <strong>lesiones visibles en el hocico</strong>, similares a esporulaciones, adem&aacute;s de comportamientos err&aacute;ticos y sensibilidad extrema al tacto.<strong> “Aplicamos antif&uacute;ngicos t&oacute;picos y v&iacute;a oral, pero solo conseguimos alivio temporal. El hongo sigue activo”</strong>, explic&oacute; la veterinaria Luc&iacute;a Santellan, de una cl&iacute;nica local./</p>
-<figure class="imgnota">
-                    <img src="img/vaca.jpg" alt="vaca con presencia de hongo Ophiocordyceps" />
-                    <figcaption>&iquest;Animales de granja en peligro?</figcaption>
-                </figure>
-<p>
-M&aacute;s al sur, en la zona rural lim&iacute;trofe con La Pampa, <strong>productores ganaderos denunciaron casos similares en terneros y cerdos</strong>, que presentaron p&eacute;rdida de apetito, alteraciones neurol&oacute;gicas y agresividad inusual antes de fallecer. En las necropsias se detectaron colonias de hongos en tejidos blandos y v&iacute;as respiratorias.<br>
-La Direcci&oacute;n de Zoonosis provincial revel&oacute; que todos los animales afectados <strong>consumieron partidas recientes de alimento balanceado</strong>, tanto para mascotas como para ganado. Dichas partidas fueron elaboradas con <strong>granos seleccionados y procesados por la empresa <em>Monsantino</em></strong>.</p>
-<blockquote>
-                    <p>
-                        Estamos frente a un brote grave de origen f&uacute;ngico. Si bien a&uacute;n no hay evidencia de transmisi&oacute;n directa a humanos por contacto, el consumo de alimentos contaminados podr&iacute;a representar un riesgo serio
-                    </p>
-                    <br />
-                    <div class="llamadas">
-                        , señal&oacute; el titular del &aacute;rea, Dr. Ernesto Vargas.
-                    </div>
-                </blockquote>
-<p>
-En respuesta inmediata, el gobierno provincial <strong>orden&oacute; el retiro total del mercado de los lotes afectados</strong>, impuso <strong>una multa millonaria a la empresa Monsantino por omisi&oacute;n de controles sanitarios</strong>, y pidi&oacute; colaboraci&oacute;n federal para investigar la cadena de distribuci&oacute;n.<br>
-Las asociaciones protectoras de animales y veterinarios independientes <strong>piden declarar la emergencia sanitaria</strong>, ante el creciente n&uacute;mero de mascotas con s&iacute;ntomas compatibles en barrios del oeste y norte capitalino.
-                </p>
-					<blockquote>
-                    <p>
-                       Nos est&aacute;n llegando consultas todos los d&iacute;as. Gatos, perros, incluso canarios y gallinas. Es como si el hongo ya hubiera cruzado todas las barreras naturales
-                    </p>
-                    <br />
-                    <div class="llamadas">
-                        , concluy&oacute; Santellan.
-                    </div>
-                </blockquote>
-                <footer class="footernota">
-                    <p>comentarios (1952)</p>
-                </footer>
-            </article>
-            
-                       <p><strong>Clarion – Secci&oacute;n Salud y Sociedad</strong></p>
-<article class="nota">
-                <header>
-                    <hgroup>
-                        <h1>&iquest;Primeras personas afectadas por el hongo Nova?</h1>
-                        <h2>Apariciones de lesiones cut&aacute;neas y bucales generan preocupaci&oacute;n. El ANMAT evita dar respuestas y la OMS mantiene silencio.</h2>
-                    </hgroup>
-                    <time datetime="2026-02-05" pubdate>publicado 5 de febrero de 2026</time>
-                </header>
-                <figure class="imgnota">
-                    <img src="img/lengua.jpg" alt="Lengua de una persona con hongo Ophiocordyceps" />
-                    <figcaption>&iquest;Primeras personas afectadas?</figcaption>
-                </figure>
-                <p>
-                   
-<strong>BUENOS AIRES</strong>.– En los &uacute;ltimos d&iacute;as, centros m&eacute;dicos de la Capital Federal y el conurbano comenzaron a reportar <strong>casos aislados de pacientes con s&iacute;ntomas </strong>cut&aacute;neos y orales inusuales, principalmente en lengua, cuello y manos. Las lesiones presentan <strong>caracter&iacute;sticas mic&oacute;ticas at&iacute;picas</strong>, resistentes a los tratamientos habituales.<br>
-Fotograf&iacute;as exclusivas a las que accedi&oacute; Clarion muestran <strong>zonas esporuladas en mucosas orales</strong>, en lo que podr&iacute;a ser el <strong>primer indicio cl&iacute;nico de una infecci&oacute;n por el hongo Ophiocordyceps unilateralis Nova</strong>, la variante mutada detectada en cultivos y animales en distintos puntos del pa&iacute;s.<br>
-Consultado por este medio, el vocero del <strong>ANMAT</strong> evit&oacute; dar declaraciones concluyentes. “Estamos monitoreando los casos. Por ahora son espor&aacute;dicos, no hay indicios de una propagaci&oacute;n sostenida”, fue la &uacute;nica respuesta oficial.<br>
-No obstante, fuentes m&eacute;dicas del Hospital Ramos Mej&iacute;a, que pidieron mantener el anonimato, confirmaron al menos <strong>17 casos sospechosos</strong> atendidos entre enero y la primera semana de febrero.</p>
-<blockquote>
-                    <p>
-Los pacientes presentan ardor persistente, hinchaz&oacute;n y sensibilidad extrema al calor. En algunos casos se observan episodios breves de confusi&oacute;n o irritabilidad, pero no se puede confirmar un v&iacute;nculo directo a&uacute;n
-                    </p>
-                    <br />
-                    <div class="llamadas">
-                      , señal&oacute; un especialista del &aacute;rea de Infectolog&iacute;a.
-                    </div>
-                </blockquote>
-<p>
-La Organizaci&oacute;n Mundial de la Salud (OMS) a&uacute;n no emiti&oacute; ning&uacute;n comunicado oficial, mientras que los organismos de salud nacionales y provinciales iniciaron investigaciones preliminares sobre un posible nexo entre estos casos y el consumo de productos alimenticios contaminados, especialmente vinos, verduras y derivados de cereales.<br>
-    La empresa <em>Monsantino</em>, creadora de la l&iacute;nea de cultivos NovaGreen que incluye modificaciones gen&eacute;ticas con Ophiocordyceps, no respondi&oacute; a los reiterados pedidos de entrevista de este diario.<br>
-Las grandes farmac&eacute;uticas, por ahora, recomiendan el uso de antif&uacute;ngicos comunes como fluconazol y terbinafina, aunque en la mayor&iacute;a de los casos solo ofrecen alivio parcial de los s&iacute;ntomas.</p>
-<blockquote>
-                    <p>
-Estamos ante una micolog&iacute;a que no se comporta como ninguna otra. No sabemos si estamos viendo el principio de algo mayor… o si ya es demasiado tarde
-                    </p>
-                    <br />
-                    <div class="llamadas">
-                     , sostuvo en off un profesional del Instituto Malbr&aacute;n.
-                    </div>
-                </blockquote>
-<p>
-Mientras tanto, el silencio institucional pesa m&aacute;s que los s&iacute;ntomas visibles. El miedo se filtra por las comisuras de cada boca afectada, aunque oficialmente, la infecci&oacute;n sigue siendo “controlada”.
-                </p>
-					  <figure class="imgnota">
-                    <img src="img/cuello.jpg" alt="cuello de una persona con hongo Ophiocordyceps" />
-                    <figcaption>&iquest;Primeras personas afectadas?</figcaption>
-                </figure>
-                <footer class="footernota">
-                    <p>comentarios (65002)</p>
-                </footer>
-            </article>
-            
-<p><strong>Nota cient&iacute;fica publicada en revista extranjera – "Journal of Synthetic Biology"</strong></p>
-<article class="nota">
-<header>
-<hgroup>
-<h1>Emerging Symbiotic Fungal Pathogens in Agricultural Genomics</h1>
-<h2>extracto:</h2>
-</hgroup>
-<time datetime="2026-03-05" pubdate>publicado Marzo 2026</time>
-</header>
-
-<blockquote>
-<p>Los simbiontes artificiales basados en Cordyceps est&aacute;n mostrando un patr&oacute;n inusual de horizontalidad gen&eacute;tica. En ciertos experimentos, la mutaci&oacute;n espont&aacute;nea gener&oacute; variantes capaces de colonizar tejidos vivos m&aacute;s all&aacute; del hospedador vegetal original…”
-</p>
-<br />
-</blockquote>
-<footer class="footernota">
-<p>comentarios (234)</p>
-</footer>
-</article>
-
-
-<p><strong>Acapulco Express – Internacionales</strong></p>
-<article class="nota">
-<header>
-<hgroup>
-<h1>Ophiocordyceps no tiene freno: M&eacute;xico tambi&eacute;n afectado</h1>
-<h2>Campesinos de Chapultepec denuncian p&eacute;rdidas totales y lesiones tras manipular cultivos transg&eacute;nicos de origen argentino.</h2>
-</hgroup>
-<time datetime="2026-03-13" pubdate>publicado 13 de marzo de 2026</time>
-</header>
-<figure class="imgnota">
-<img src="img/cultivos.jpg" alt="Cultivos afectados por el hongo Ophiocordyceps" />
-<figcaption>&iquest;M&egrave;xico que hara ahora con el Hongo Nova?</figcaption>
-</figure>
-<p>
-	<strong>M&eacute;XICO, ESTADO DE M&eacute;XICO</strong>.– El malestar no es solo f&iacute;sico. En Chapultepec, decenas de agricultores enfrentan p&eacute;rdidas econ&oacute;micas devastadoras tras confirmar que sus cultivos fueron <strong>contaminados con la cepa mutada del hongo Ophiocordyceps</strong>, presente en granos transg&eacute;nicos comercializados por la multinacional <strong><em>Monsantino</em></strong>.<br>
-Apenas una semana atr&aacute;s, el Ministerio de Agricultura mexicano hab&iacute;a emitido un comunicado <strong>autorizando el ingreso de semillas NovaGreen-12</strong>, sin mencionar los riesgos sanitarios detectados en pa&iacute;ses como Argentina, Chile o Uruguay.<br>
-Hoy, los campos est&aacute;n vac&iacute;os y los s&iacute;ntomas comienzan a aparecer. <strong>Lesiones rojizas, ardor e inflamaci&oacute;n en manos y antebrazos</strong> son reportadas por trabajadores que <strong>no llegaron siquiera a consumir los alimentos, sino que apenas los manipularon</strong>.</p>
-<blockquote>
-<p>
-	Empezamos a ver que los granos estaban raros, como con polvillo, pero nos dijeron que era normal. Ahora tenemos a media comunidad con las manos en carne viva
-</p>
-<br />
-<div class="llamadas">
-, declar&oacute; Alejandro T., productor de la zona.
-</div>
-</blockquote>
-<p>
-Fotograf&iacute;as capturadas por este medio muestran <strong>esporas visibles en las vainas del ma&iacute;z y brotes de moho en las semillas de sorgo</strong>, lo que confirmar&iacute;a que la mutaci&oacute;n del hongo ya es <strong>altamente contagiosa por contacto</strong>, incluso en su etapa vegetal.<br>
-Por su parte, el <strong>Centro de Salud Ambiental del Estado de M&eacute;xico</strong> activ&oacute; una alerta preventiva y recomend&oacute; evitar el consumo de granos importados y extremar las medidas de bioseguridad. Sin embargo, <strong>la distribuci&oacute;n de estas semillas ya hab&iacute;a alcanzado a m&aacute;s de 60 municipios</strong>.<br>
-En paralelo, <strong>el gobierno federal ha convocado una reuni&oacute;n de emergencia con la Secretar&iacute;a de Salud, la UNAM y el Ej&eacute;rcito</strong>, para analizar protocolos de contenci&oacute;n en zonas rurales.</p>
-<blockquote>
-<p>
-	No estamos preparados para una crisis de esta magnitud”, reconoci&oacute; un funcionario bajo anonimato. “El hongo no solo se adapta, sino que se propaga m&aacute;s r&aacute;pido de lo que nuestras estructuras pueden responder
-</p>
-<br />
-</blockquote>
-<p>
-Monsantino, como en otras regiones afectadas, <strong>no respondi&oacute; a los pedidos de informaci&oacute;n</strong>. La planta que posee en Sinaloa permanece cerrada desde el martes, sin personal ni custodia visible.<br>
-El <strong>Ophiocordyceps unilateralis Nova</strong> ya no es un tema de papers cient&iacute;ficos: est&aacute; entre las manos de quienes dan de comer al continente. Y parece no tener intenci&oacute;n de detenerse.
-</p>
-  <figure class="imgnota">
-                    <img src="img/mano.webp" alt="Mano de un trabajador rural con afecciones por hongo Ophiocordyceps" />
-                    <figcaption>Me dulen las manos, boca, ya no aguanto m&aacute;s! fue el comentario de un campesino antes de cedarlo.</figcaption>
-                </figure>
-<footer class="footernota">
-<p>comentarios (16254)</p>
-</footer>
-</article>
-
-
-
-Fecha: 
- T&iacute;TULO:
- 
- SUBT&iacute;TULO:
- 
-
-<p><strong>Diario Global Times – Asia & Mundo</strong></p>
-<article class="nota">
-<header>
-<hgroup>
-<h1>Yunnan bajo cuarentena: la mutaci&oacute;n del Ophiocordyceps activa alerta sanitaria mundial</h1>
-<h2>China detecta esporas del hongo en cultivos y mercados h&uacute;medos. La OMS convoca comit&eacute; de emergencia ante propagaci&oacute;n global.</h2>
-</hgroup>
-<time datetime="2026-04-06" pubdate>publicado 06 de abril de 2026</time>
-</header>
-<figure class="imgnota">
-<img src="img/Hongos-letales.jpg" alt="Nova invade China" />
-<figcaption>Yunnan - China Nova FUERA de control</figcaption>
-</figure>
-<p>
-	<strong>KUNMING, PROVINCIA DE YUNNAN – REP&uacute;BLICA POPULAR CHINA</strong>.– Lo que comenz&oacute; como una <strong>infecci&oacute;n biol&oacute;gica contenida en Sudam&eacute;rica</strong>, hoy se vuelve una <strong>crisis sanitaria internacional</strong>. Autoridades chinas confirmaron la aparici&oacute;n de la variante Nova del hongo Ophiocordyceps unilateralis en <strong>productos frescos</strong> en mercados de Yunnan, tras reportes de <strong>personas con convulsiones y s&iacute;ntomas psicomotores severos</strong>.<br>
-Los an&aacute;lisis de laboratorio revelaron una <strong>expansi&oacute;n activa de esporas resistentes a fungicidas comerciales</strong>, en alimentos distribuidos en las provincias de Sichuan, Guangxi y Guizhou. Las autoridades ordenaron el <strong>cierre inmediato de mercados, cuarentena en zonas rurales</strong>, y un operativo de desinfecci&oacute;n masiva.</p>
-<blockquote>
-<p>
-	Nunca vimos algo as&iacute;: el hongo ha modificado su estructura, resiste temperaturas y salta entre especies vegetales y animales con facilidad alarmante
-</p>
-<br />
-<div class="llamadas">
-, dijo el Dr. Wen Li, del Instituto de Salud de Kunming.
-</div>
-</blockquote>
-<p>
-La situaci&oacute;n en China ocurre a solo d&iacute;as de que <strong>pa&iacute;ses como Per&uacute;, Brasil, Inglaterra (Escocia), España, Sud&aacute;n, Sud&aacute;frica, Alemania, Estados Unidos, Rusia y Australia </strong>emitieran sus <strong>primeros reportes oficiales</strong> de casos sospechosos. En todos los casos, el com&uacute;n denominador es la importaci&oacute;n directa o indirecta de <strong>semillas y productos derivados de NovaGreen-12</strong>, desarrollados por la corporaci&oacute;n transnacional <em>Monsantino</em>.<br>
-La <strong>OMS</strong> convoc&oacute; para mañana un <strong>comit&eacute; de emergencia internacional</strong>, luego de que la Oficina de Salud del Reino Unido informara que el brote en Edimburgo se <strong>hab&iacute;a cobrado tres vidas en las &uacute;ltimas 24 horas</strong>, tras presentar un cuadro cl&iacute;nico de fiebre, convulsiones y episodios de agresividad extrema.<br>
-En <strong>Sud&aacute;n</strong>, los campos de sorgo han sido incinerados en su totalidad por las Fuerzas Armadas, mientras que en <strong>Australia</strong>, m&aacute;s del 30% de las plantaciones de cebada fueron declaradas contaminadas.<br>
-En <strong>Per&uacute;</strong>, pequeños productores del Valle Sagrado alertaron sobre la aparici&oacute;n de “plantas enfermas que huelen a carne podrida”, y en <strong>Brasil</strong>, el Ministerio de Agricultura suspendi&oacute; la venta de harina nacional por la aparici&oacute;n de esporas en silos y molinos.<br>
-<strong>La contaminaci&oacute;n cruzada entre especies, la resistencia al calor y la agresividad del hongo Nova han llevado a algunos cient&iacute;ficos a compararlo con un “<em>nuevo tipo de plaga global no convencional”</em></strong>.</p>
-<blockquote>
-<p>
-	La &uacute;nica forma comprobada de eliminarlo es mediante fuego a m&aacute;s de 300 grados Celsius. No es algo que puedas rociar con pesticidas y esperar lo mejor. Esto es otra escala
-</p>
-<br />
-<div class="llamadas">
-, afirm&oacute; la doctora Elke Hoffman del Instituto Robert Koch, Alemania.
-</div>
-</blockquote>
-<p>
-Las redes sociales han bautizado al fen&oacute;meno como <strong>“La Llama Silenciosa”</strong>, por la imagen repetida de <strong>campos en llamas</strong> alrededor del mundo, intentando frenar lo inevitable.<br>
-Con m&aacute;s de una docena de pa&iacute;ses ya involucrados y miles de hect&aacute;reas perdidas, <strong>el mundo se prepara para una batalla no solo por la salud, sino por la supervivencia alimentaria</strong>.
-</p>
-<figure class="imgnota">
-<img src="img/PERU2025-Alessandro-Catenazzi-hongo-de-anfibios-Peru.jpg" alt="Peru fauna afectada" />
-<figcaption>En Peru flora y fauna se ven afectadas</figcaption>
-</figure>
-
-<footer class="footernota">
-<p>comentarios (34751)</p>
-</footer>
-</article> 
-
-
-<p><strong>Diario Naci&oacute;n Federal - Argentina</strong></p>
-<article class="nota">
-<header>
-<hgroup>
-<h1>La Tierra arde: militares autorizan bombardeos en zonas infectadas</h1>
-<h2>El mundo se sumerge en el caos: los alimentos escasean, los pueblos se incendian, y la guerra contra el hongo Nova se libra con fuego.</h2>
-</hgroup>
-<time datetime="2026-06-17" pubdate>publicado 17 de junio de 2026</time>
-</header>
-<figure class="imgnota">
-<img src="img/villagralbelgrano.png" alt="Villa General Belgrano queda bajo las cenisas" />
-<figcaption>Villa General Belgrano queda bajo las cenisas</figcaption>
-</figure>
-<p>
-<strong>BUENOS AIRES, ARGENTINA</strong>. – Mientras miles de campos arden en las provincias argentinas y el humo tiñe de gris el cielo sobre Buenos Aires, el mundo parece haber entrado en un <strong>nuevo punto de no retorno</strong>.<br>
-En las &uacute;ltimas semanas, la <strong>escasez total de alimentos no contaminados</strong> ha detonado una oleada de violencia y saqueos en ciudades como Rosario, La Plata, C&oacute;rdoba y Mar del Plata. Cosechas completas fueron incendiadas por vecinos desesperados, ante el m&iacute;nimo rumor de esporas. Algunas provincias establecieron toques de queda permanentes, mientras el gobierno nacional declar&oacute; el estado de excepci&oacute;n alimentaria.<br>
-<br>
-<br>
-Pero la situaci&oacute;n es global.
-    </p>
-<figure class="imgnota">
-<img src="img/ref665_6.jpeg" alt="cuello de una persona con hongo Ophiocordyceps" />
-<figcaption>&iquest;Primeras personas afectadas?</figcaption>
-</figure>
-<hr>
-<h1>EL MUNDO, EN LLAMAS</h1>
-<p>
-En <strong>Estados Unidos</strong>, la Fuerza A&eacute;rea confirm&oacute; haber <strong>bombardeado con napalm ciudades enteras</strong> en el centro agr&iacute;cola de Iowa, luego de perder contacto con tres bases del Centro de Control F&uacute;ngico.<br>
- <strong>Rusia</strong>, por su parte, orden&oacute; el uso de <strong>termob&aacute;ricas</strong> sobre poblados rurales del sur de Siberia.<br>
- En India, decenas de miles de personas fueron evacuadas de Uttar Pradesh, tras brotes violentos de infecciones humanas con signos de rabia.<br>
-El miedo al contagio y la imposibilidad de contener las esporas ha desatado el caos: la gente incendia sus propios barrios, los cuerpos no se entierran, las comidas se queman antes de probarse.</p>
-<figure class="imgnota">
-<img src="img/ref665_5.jpeg" alt="ciudades calcinadas" />
-<figcaption>ciudades calcinadas.</figcaption>
-</figure>
-<blockquote>
-<p>
-	Nos convertimos en guardianes del fuego. Quemamos a los nuestros. No hay otra defensa.
-</p>
-<br />
-<div class="llamadas">
-— Testimonio de Emilia G., m&eacute;dica de frontera en la provincia de San Juan.
-</div>
-</blockquote>
-
-<footer class="footernota">
-<p>comentarios (4351)</p>
-</footer>
-</article>
-
-            <!----------------------------------------------------------------------------->
-            </section>
-           </main>        
-        <footer id="pie">Derechos Reservados &copy; 2025 - Claudio Segura&nbsp;<a id="muestra-hora"></a></footer>
-    </body>
+		<header class="bg-dark text-light py-3" style="background-image: url('img/refugio665.png');">
+			<div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+				<div class="cajadetiempo" data-aos="fade-down">
+					Tiempo para las pr&oacute;ximas 24hs: Soleado con alto &iacute;ndice de esporas.<br />
+					<span style="font-style: normal">
+					Viento: 27km/h Este; Temperatura: 21&deg;C; Hum: 62%
+					</span>
+				</div>
+				<div class="mb-4 mb-md-0" data-aos="zoom-in">
+					<img src="img/icorefugio665.png" alt="Refugio 665 Bs. As. Marcos Paz" class="img-fluid" style="max-height: 80px;">
+				</div>
+				<div data-aos="fade-down">
+					<h1 class="h3 mb-0 text-center text-md-end">Refugio 665</h1>
+				</div>
+			</div>
+		</header>
+		<!-- sub header -->
+		<div class="bg-success text-light py-2" data-aos="fade-up">
+			<div class="container text-center small">
+				Bs. As. - 8 de Noviembre 2036 - Historia del Refugio 665
+			</div>
+		</div>
+		<!-- Navegacion -->
+		<nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark"> 
+			<div class="container-fluid">
+				<a class="navbar-brand" href="diario665.html">Diario 665</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="historia665.html">Historia del refugio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="noticias.html">Diarios y Noticias hist&oacute;ricas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contacto.html">Contactate con el refugio</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Buscar</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!-- principal -->
+		<main class="container my-5 text-dark">
+			<p class="text-center fw-bold text-success mb-4">
+				Este es un racconto de noticias, restos de informes y algunas comunicaciones que tenemos. Con estos datos tratamos de armar la historia del hongo Nova y su origen con Novagen-12, y seguramente logremos encontrar la solución si el tiempo y nuestra salud lo permiten.
+			</p>
+			<section id="origen" class="row g-6 col-12 col-md-12 col-lg-12">
+				<!-- NOTA Articulo 1 -->
+				<article class="mb-5  diario border-success shadow rounded-3 p-2" data-aos="fade-up" data-aos-delay="100">
+<!--
+					<div class="card bg-dark border-success shadow rounded-3">
+						<div class="card-body">
+-->
+							<header class="mb-3">
+								<hgroup>
+									<h1><em>Diario 1</em> – Sección: Genética Agraria</h5>
+									<h2>NovaGreen, el nuevo éxito de Monsantino que promete revolucionar el trigo argentino</h6>
+									<small class="text-secondary">Publicado: 10-11-2023</small>
+								</hgroup>
+							</header>
+							<div class="news-columns ">
+							<figure class="text-center mb-4">
+								<img src="img/semillatrigo.png" alt="Monsantino trigo transg&eacute;nico" class="img-fluid rounded">
+								<figcaption class="small text-muted mt-2" >Monsantino trigo transg&eacute;nico</figcaption>
+							</figure>
+							<p>
+							<em>
+							El innovador desarrollo biotecnol&oacute;gico fue premiado por la Municipalidad de R&iacute;o Cuarto y comenzar&aacute; su fase de producci&oacute;n en 2024.</em><br />
+							<strong>C&Oacute;RDOBA.–</strong> La empresa biotecnol&oacute;gica <em>Monsantino</em>, recientemente adquirida por el conglomerado alem&aacute;n <em>Bajern AG</em>, ha sido galardonada por la Municipalidad de R&iacute;o Cuarto por su proyecto <em>NovaGreen</em>, una nueva variedad de trigo transg&eacute;nico que promete ser <strong><em>“el cultivo del futuro”</em></strong>.</p><p>
+							La distinci&oacute;n, entregada durante la ExpoAgroLocal 2023, habilita a la planta de gen&eacute;tica de Monsantino –ubicada en el Centro de Experimentaci&oacute;n de Semillas fundado en 2013 – a de iniciar la primera fase de implementaci&oacute;n a gran escala.</p><p>
+							El desarrollo se basa en la modificaci&oacute;n gen&eacute;tica del trigo mediante la incorporaci&oacute;n del <em>Ophiocordyceps unilateralis</em>, un hongo conocido por su capacidad de alterar el comportamiento de ciertos insectos, adaptado aqu&iacute; para repeler de forma “natural” a los depredadores del cereal.
+							</p>
+							<blockquote>
+								<p>
+									Estamos ante un avance hist&oacute;rico en biotecnolog&iacute;a agraria, que permite reducir dr&aacute;sticamente el
+								uso de agroqu&iacute;micos sin comprometer el rendimiento
+								</p>
+								<br />
+								<div class="llamadas">, explic&oacute; el vocero de la empresa, en un evento cerrado a la prensa.</div>
+							</blockquote>
+							<p>
+							Aunque la compañ&iacute;a declin&oacute; responder preguntas sobre las ubicaciones espec&iacute;ficas de las zonas de prueba, fuentes cercanas al municipio confirmaron que el primer lote de siembra experimental se instalar&aacute; en los campos al este del departamento R&iacute;o Cuarto, con vistas a extenderse a toda la regi&oacute;n sur de C&oacute;rdoba para el ciclo 2024.</p><p>
+							La medida ratifica el decreto impulsado en su momento por el entonces intendente Juan Jure, que promov&iacute;a el uso intensivo de semillas gen&eacute;ticamente modificadas en zonas rurales bajo convenios de producci&oacute;n controlada. Expertos locales celebran el avance, aunque algunos sectores ambientalistas han expresado cautela ante la escasa informaci&oacute;n p&uacute;blica sobre los protocolos de bioseguridad y
+							control ecol&oacute;gico.
+							</p>
+							<blockquote>
+								<p>No estamos en contra de la ciencia, pero s&iacute; de la opacidad</p>
+								<br />
+								<div class="llamadas">
+									, señal&oacute; en un comunicado la Asociaci&oacute;n VerdeSur, quien solicit&oacute; acceso a los estudios toxicol&oacute;gicos previos a la liberaci&oacute;n del cultivo.
+								</div>
+							</blockquote>
+							</div>
+							<footer class="mt-3">
+								<small class="text-success">Comentarios (138)</small>
+							</footer>
+<!--
+						</div>
+					</div>
+-->
+				</article>
+				<!-- NOTA Articulo 2 -->
+				<p class="text-center fw-bold text-success mb-4">
+					<strong>Recorte de Diario – "La Naci&oacute;n", 12 de Noviembre de 2023</strong></p>
+				<article class="mb-5  diario border-success shadow rounded-3 p-2" data-aos="fade-up" data-aos-delay="100">
+<!--
+					<div class="card bg-dark border-success shadow rounded-3">
+						<div class="card-body">
+-->
+							<header class="mb-3">
+								<hgroup>
+									<h1>Monsantino lanza NovaGreen-12: &iquest;el futuro del trigo argentino?</h1>
+									<h2>Cultivo resistente al clima extremo promete aumentar la producci&oacute;n un 40%.</h2>
+								</hgroup>
+								<time datetime="2023-11-12" pubdate>publicado 12-11-2023</time>
+							</header>
+							<div class="news-columns ">.
+							<figure class="text-center mb-4">
+								<img src="img/monsantino.png" alt="Monsantino avanza en investigaci&oacute;n de semillas y cultivos" class="img-fluid rounded"/>
+								<figcaption>Monsantino avanza en investigaci&oacute;n de semillas y cultivos</figcaption>
+							</figure>
+								<p>
+									“Este trigo, desarrollado con biotecnolog&iacute;a de punta, incluye un agente simbi&oacute;tico que protege la planta de plagas sin necesidad de pesticidas. Seg&uacute;n la empresa, es 100% seguro para el consumo humano”, dijo en conferencia el Dr. Ren&eacute; Pagani, director de investigaci&oacute;n de Monsantino Cono Sur.
+								</p>
+							</div>
+							<footer class="mt-3">
+								<small class="text-success">Comentarios (1952)</small>
+							</footer>
+<!--
+						</div>
+					</div>
+-->
+				</article>
+				<!-- NOTA Articulo 3 -->
+					<p class="text-center fw-bold text-success mb-4"><strong>Informe confidencial interno – Ministerio de Agricultura, 02/11/2023</strong></p>
+				<article class="mb-5  diario border-success shadow rounded-3 p-2" data-aos="fade-up" data-aos-delay="100">
+<!--
+					<div class="card bg-dark border-success shadow rounded-3">
+						<div class="card-body">
+-->
+							<header class="mb-3">
+								<hgroup>
+									<h1>An&aacute;lisis preliminar de cepa modificada en NovaGreen-12</h1>
+								</hgroup>
+								<time datetime="2023-11-02" pubdate>publicado 02-11-2023</time>
+							</header>
+							<div class="news-columns ">
+							<p>"
+								…la modificaci&oacute;n gen&eacute;tica realizada sobre el hongo O. unilateralis muestra signos de inestabilidad. Detectamos material gen&eacute;tico adaptable en ambientes con alta salinidad, temperaturas bajo cero y exposici&oacute;n prolongada a radiaci&oacute;n UV…
+							"
+							</p>
+							<p>
+								"
+								…recomendamos una moratoria temporal en la exportaci&oacute;n del lote NG12 hasta realizar m&aacute;s pruebas en humanos y animales...
+								"
+							</p>
+							<br />
+							<div class="llamadas">
+								Archivo clasificado - Acceso restringido
+							</div>
+							</div>
+							<footer class="mt-3">
+								<small class="text-success">Comentarios (1952)</small>
+							</footer>
+<!--
+						</div>
+					</div>
+-->
+				</article>
+				<!-- NOTA Articulo 4 -->
+				<p class="text-center fw-bold text-success mb-4"><strong>Diario 1 – Secci&oacute;n: Ciencia y Producci&oacute;n.</strong></p>
+				<article class="mb-5  diario border-success shadow rounded-3 p-2" data-aos="fade-up" data-aos-delay="100">
+<!--
+					<div class="card bg-dark border-success shadow rounded-3">
+						<div class="card-body">
+-->
+							<header class="mb-3">
+								<hgroup>
+									<h1> NovaGreen se expande: Monsantino inicia pruebas en soja y ma&iacute;z
+									</h1>
+									<h2>Un informe municipal descarta v&iacute;nculo entre infecciones recientes y los cultivos de trigo transg&eacute;nico.</h2>
+								</hgroup>
+								<time datetime="2024-05-24" pubdate>publicado 24 de mayo de 2024</time>
+							</header>
+							<div class="news-columns ">.
+							<figure class="text-center mb-4">
+								<img src="img/hormiga.jpg" alt="Hormiga afectada por hongo cordyceps en C&oacute;rdoba Argentina." class="img-fluid rounded"/>
+								<figcaption>Hormiga afectada por hongo cordyceps en C&oacute;rdoba Argentina.</figcaption>
+							</figure>
+							<p>
+							<strong>C&Oacute;RDOBA</strong>.– En medio de crecientes rumores sobre s&iacute;ntomas inusuales detectados en animales rurales, la empresa <em>Monsantino</em> anunci&oacute; la expansi&oacute;n de su l&iacute;nea NovaGreen hacia variedades modificadas de soja y ma&iacute;z, desarrolladas en su centro experimental de R&iacute;o Cuarto.<br>
+							La decisi&oacute;n se conoce apenas d&iacute;as despu&eacute;s de la publicaci&oacute;n de un <strong>informe ambiental oficial</strong> elaborado por la Direcci&oacute;n de Zoonosis y Ambiente del Ente Descentralizado de Control Municipal, que concluye que <strong><em>“no existe relaci&oacute;n directa”</em></strong> entre los casos de infecci&oacute;n detectados en fauna silvestre y dom&eacute;stica, y los cultivos de trigo NovaGreen-12 utilizados en la regi&oacute;n.</p>
+							<blockquote>
+								<p>La cepa del hongo presente en los animales infectados presenta mutaciones propias, ajenas a la modificaci&oacute;n gen&eacute;tica del cereal</p>
+								<br />
+								<div class="llamadas">
+									,sostiene el informe firmado por la Secretar&iacute;a de Planificaci&oacute;n y Desarrollo Sustentable, junto al dictamen jur&iacute;dico de la Fiscal&iacute;a Municipal.
+								</div>
+							</blockquote>
+							<p>
+							El documento recomienda el sacrificio inmediato de animales infectados en zonas cercanas a los campos de siembra, como medida preventiva, pero no limita la expansi&oacute;n del uso de las semillas modificadas en otros cultivos.
+							Desde Monsantino aseguraron que <strong>“la tarea a desarrollar es de car&aacute;cter estrictamente t&eacute;cnico, sin consecuencias ambientales demostradas”</strong>, y confirmaron que ya se est&aacute;n realizando las primeras pruebas de adaptaci&oacute;n en h&iacute;bridos de ma&iacute;z y variedades transg&eacute;nicas de soja para el ciclo 2025.<br>
+							Sectores acad&eacute;micos y ONGs ambientalistas manifestaron cierta preocupaci&oacute;n ante la falta de estudios independientes sobre los efectos del hongo simbi&oacute;tico fuera del ecosistema del trigo.</p>
+							<blockquote>
+								<p>Est&aacute;n desarrollando organismos extremadamente complejos, con material gen&eacute;tico f&uacute;ngico, sin protocolos internacionales claros. Esto no es solo soja y ma&iacute;z, est&aacute;n jugando a la alquimia con la base de nuestra alimentaci&oacute;n</p>
+								<br />
+								<div class="llamadas">
+									, advirti&oacute; el Dr. Carlos Montero, bi&oacute;logo molecular de la Universidad Nacional del Litoral.
+								</div>
+							</blockquote>
+							</div>
+							<footer class="mt-3">
+								<small class="text-success">Comentarios (7352)</small>
+							</footer>
+<!--
+						</div>
+					</div>
+-->
+				</article>
+				<!-- NOTA Articulo 5 -->
+				<p class="text-center fw-bold text-success mb-4"><strong>La Voz de Rosario – Secci&oacute;n: Medioambiente y Salud P&uacute;blica Fecha: 12 de noviembre de 2024</strong></p>
+				<article class="mb-5  diario border-success shadow rounded-3 p-2" data-aos="fade-up" data-aos-delay="100">
+<!--
+					<div class="card bg-dark border-success shadow rounded-3">
+						<div class="card-body">
+-->
+							<header class="mb-3">
+								<hgroup>
+									<h1>&iquest;Monsantino, un peligro inminente? Crece la preocupaci&oacute;n por la expansi&oacute;n del hongo Ophiocordyceps en Santa Fe</h1>
+									<h2>Organismos oficiales investigan la posible relaci&oacute;n entre semillas transg&eacute;nicas y un brote inusual de infecciones en la fauna local.</h2>
+								</hgroup>
+							<time datetime="2024-11-12" pubdate>publicado 12-11-2024</time>
+							</header>
+							<div class="news-columns ">.
+							<figure class="text-center mb-4">
+								<img src="img/arania640x480.jpg" alt="Preocupaci&oacute;n por fauna afectada por hongos" class="img-fluid rounded"/>
+								<figcaption>Preocupaci&oacute;n por fauna afectada por hongos</figcaption>
+							</figure>
+							<p>
+							<strong>SANTA FE</strong>.– La aparici&oacute;n de m&uacute;ltiples animales infectados por una variante del hongo Ophiocordyceps unilateralis encendi&oacute; las alarmas entre especialistas en zoonosis, quienes advierten que el pat&oacute;geno ha comenzado a extenderse m&aacute;s all&aacute; de su hu&eacute;sped natural, afectando ahora a especies mayores, incluso mam&iacute;feros pequeños y aves carroñeras.<br>
+							Si bien este hongo es conocido por su capacidad de alterar el comportamiento de insectos, en especial hormigas, cient&iacute;ficos del INTA y el INTI aseguran que las muestras obtenidas en la zona presentan una <strong>mutaci&oacute;n in&eacute;dita</strong> que podr&iacute;a estar relacionada con las cepas utilizadas en desarrollos biotecnol&oacute;gicos recientes en la provincia de C&oacute;rdoba.
+							</p>
+							<blockquote>
+								<p>
+									“No es casual que estemos viendo esta expansi&oacute;n justo ahora, y justo aqu&iacute;, donde llegaron granos y forraje modificados provenientes del sur cordob&eacute;s”
+								</p>
+								<br />
+								<div class="llamadas">
+									, afirm&oacute; bajo reserva un t&eacute;cnico del INTA, que participa de las primeras investigaciones de campo.
+								</div>
+							</blockquote>
+							<p>A pesar de los crecientes reportes, la empresa <em>Monsantino</em> se neg&oacute; a brindar declaraciones y no ha revelado detalles sobre los compuestos gen&eacute;ticos utilizados en sus programas de modificaci&oacute;n de trigo, soja y ma&iacute;z bajo la l&iacute;nea NovaGreen.<br>
+							En respuesta, la Secretar&iacute;a de Agricultura de Santa Fe anunci&oacute; la apertura de una investigaci&oacute;n formal en conjunto con la <strong>ANMAT, el SENASA y otras agencias federales</strong>, ante lo que califican como <strong>“un comportamiento f&uacute;ngico ins&oacute;lito y potencialmente disruptivo para los ecosistemas rurales”</strong>.<br>
+							Fuentes cercanas al caso aseguran que entre los animales afectados hay gatos, perros rurales y aves de corral, que <strong>presentan signos de desorientaci&oacute;n, agresividad y una extraña esporulaci&oacute;n en zonas h&uacute;medas del cuerpo</strong>. En un caso registrado en Villa Constituci&oacute;n, un caballo debi&oacute; ser sacrificado tras convulsionar y atacar a su propio dueño.</p>
+							<blockquote>
+								<p>
+									Estamos viendo s&iacute;ntomas que antes solo se atribu&iacute;an a infecciones neurol&oacute;gicas virales, pero los cultivos cercanos est&aacute;n mostrando señales de esporas activas
+								</p>
+								<br />
+								<div class="llamadas">
+									, explic&oacute; el veterinario Lucas Peralta, que atiende en la zona rural de Arroyo Seco.
+								</div>
+							</blockquote>
+							</div>
+							<footer class="mt-3">
+								<small class="text-success">Comentarios (5852)</small>
+							</footer>
+<!--
+						</div>
+					</div>
+-->
+				</article>
+				<!-- NOTA Articulo 6 -->
+				<p class="text-center fw-bold text-success mb-4"><strong> Diario Uno – Secci&oacute;n: Campo & Producci&oacute;n</strong></p>
+				<article class="mb-5  diario border-success shadow rounded-3 p-2" data-aos="fade-up" data-aos-delay="100">
+<!--
+					<div class="card bg-dark border-success shadow rounded-3">
+						<div class="card-body">
+-->
+							<header class="mb-3">
+								<hgroup>
+									<h1>Alerta en Mendoza: viñedos afectados por hongo mutado resistente al calor</h1>
+									<h2>Un estudio detecta una cepa derivada del Ophiocordyceps en uvas Malbec, capaz de sobrevivir al calor del zonda. Exportadores suspenden operaciones.</h2>
+								</hgroup>
+								<time datetime="2025-09-25" pubdate>publicado 25 de septiembre de 2025</time>
+							</header>
+							<div class="news-columns ">.
+							<figure class="text-center mb-4">
+								<img src="img/mendoza.jpeg" alt="Mendoza uva con hongos" class="img-fluid rounded"/>
+								<figcaption>Hongo derivado de Ophiocordyceps en uvas</figcaption>
+							</figure>
+							<p>
+							<strong>MENDOZA</strong>.– Por primera vez en la historia vitivin&iacute;cola de la provincia, los cultivos de uva entran en estado de <strong>alerta roja</strong> tras detectarse una proliferaci&oacute;n masiva de hongos en racimos destinados a vinificaci&oacute;n, entre ellos una <strong>cepa mutada del g&eacute;nero Ophiocordyceps resistente a temperaturas extremas</strong>.<br>
+							La aparici&oacute;n del hongo, relacionada gen&eacute;ticamente con cepas utilizadas en semillas transg&eacute;nicas del centro del pa&iacute;s, ha causado <strong>estragos en viñedos de San Rafael</strong>, afectando m&aacute;s del 52% de la superficie productiva, y generando un freno inmediato a la exportaci&oacute;n de uvas y derivados.
+							</p>
+							<blockquote>
+								<p>
+									Nunca vimos algo as&iacute;. Este hongo no solo sobrevivi&oacute; al calor seco del viento zonda, sino que coloniz&oacute; la fruta en plena maduraci&oacute;n, afectando su qu&iacute;mica interna y liberando toxinas peligrosas para el consumo humano
+								</p>
+								<br />
+								<div class="llamadas">
+									, detall&oacute; el en&oacute;logo Juan Vald&eacute;s, investigador del Consejo Vitivin&iacute;cola Provincial.
+								</div>
+							</blockquote>
+							<p>
+							El an&aacute;lisis microbiol&oacute;gico revel&oacute; que, adem&aacute;s de la micobiota habitual compuesta por Alternaria, Cladosporium, Candida y Aspergillus, las muestras de uva Malbec presentaban una colonizaci&oacute;n activa de esporas del hongo Ophiocordyceps, algo in&eacute;dito a nivel mundial.</p>
+							<blockquote>
+								<p>
+									<strong>"Estamos frente a una toxina de origen f&uacute;ngico con un nivel de adaptabilidad alarmante”</strong>, señal&oacute; el equipo del Laboratorio de Microbiolog&iacute;a Enol&oacute;gica de la DOC San Rafael. <strong>“Los aislados crecieron incluso a temperaturas superiores a los 40 °C, algo jam&aacute;s registrado en este tipo de hongos"</strong>.
+								</p>
+								<br />
+							</blockquote>
+							<p>
+							Como medida extrema, se recomend&oacute; la quema total de los cultivos contaminados, descartando completamente m&eacute;todos qu&iacute;micos de control. Solo la incineraci&oacute;n completa logr&oacute; detener la proliferaci&oacute;n durante los ensayos en laboratorio.<br>
+							El impacto econ&oacute;mico no se hizo esperar. La empresa Hanseniaspora Uvarum, junto a otras firmas del cl&uacute;ster Mendoza WineTech, cerraron temporalmente operaciones y suspendieron toda exportaci&oacute;n de uva y vino hasta nuevo aviso.</p>
+							<blockquote>
+								<p>
+									Esto no es solo un problema agr&iacute;cola. Es un golpe a la cultura, a la econom&iacute;a y a la confianza en los organismos de control. &iquest;C&oacute;mo lleg&oacute; este hongo ac&aacute;? &iquest;Qui&eacute;n lo trajo? &iquest;Y por qu&eacute; nadie lo detuvo?
+								</p>
+								<br />
+								<div class="llamadas">
+									, expres&oacute; el gobernador Gustavo Ram&iacute;rez en una conferencia urgente.
+								</div>
+							</blockquote>
+							</div>
+							<footer class="mt-3">
+								<small class="text-success">Comentarios (1952)</small>
+							</footer>
+<!--
+						</div>
+					</div>
+-->
+				</article>
+				<!-- NOTA Articulo 7 -->
+				<p class="text-center fw-bold text-success mb-4"><strong>Diario de la Rep&uacute;blica – Secci&oacute;n: Sociedad y Salud</strong></p>
+				<article class="mb-5  diario border-success shadow rounded-3 p-2" data-aos="fade-up" data-aos-delay="100">
+<!--
+					<div class="card bg-dark border-success shadow rounded-3">
+						<div class="card-body">
+-->
+							<header class="mb-3">
+								<hgroup>
+									<h1>Animales afectados por el hongo Ophiocordyceps: veterinarios en alerta</h1>
+									<h2>Mascotas y ganado presentan s&iacute;ntomas f&uacute;ngicos vinculados a alimentos balanceados elaborados con granos modificados.</h2>
+								</hgroup>
+								<time datetime="2025-10-05" pubdate>publicado 5 de octubre de 2025</time>
+							</header>
+							<div class="news-columns ">.
+							<figure class="text-center mb-4">
+								<img src="img/perro.jpg" alt="Perro se ve afectado por hongo Ophiocordyceps" class="img-fluid rounded"/>
+								<figcaption>&iquest;Mascotas est&aacute;n en riesgo?</figcaption>
+							</figure>
+							<p>
+							<strong>SAN LUIS</strong>.– La preocupaci&oacute;n en la provincia crece tras confirmarse <strong>los primeros casos de animales dom&eacute;sticos y de granja infectados por una cepa agresiva del hongo Ophiocordyceps unilateralis</strong>, el mismo que ya ha sido detectado en cultivos de todo el pa&iacute;s.<br>
+							En im&aacute;genes difundidas por este medio, puede verse a un perro mestizo con <strong>lesiones visibles en el hocico</strong>, similares a esporulaciones, adem&aacute;s de comportamientos err&aacute;ticos y sensibilidad extrema al tacto.<strong> “Aplicamos antif&uacute;ngicos t&oacute;picos y v&iacute;a oral, pero solo conseguimos alivio temporal. El hongo sigue activo”</strong>, explic&oacute; la veterinaria Luc&iacute;a Santellan, de una cl&iacute;nica local./</p>
+							<figure  class="text-center mb-4">
+								<img src="img/vaca.jpg" alt="vaca con presencia de hongo Ophiocordyceps" />
+								<figcaption>&iquest;Animales de granja en peligro?</figcaption>
+							</figure>
+							<p>
+							M&aacute;s al sur, en la zona rural lim&iacute;trofe con La Pampa, <strong>productores ganaderos denunciaron casos similares en terneros y cerdos</strong>, que presentaron p&eacute;rdida de apetito, alteraciones neurol&oacute;gicas y agresividad inusual antes de fallecer. En las necropsias se detectaron colonias de hongos en tejidos blandos y v&iacute;as respiratorias.<br>
+							La Direcci&oacute;n de Zoonosis provincial revel&oacute; que todos los animales afectados <strong>consumieron partidas recientes de alimento balanceado</strong>, tanto para mascotas como para ganado. Dichas partidas fueron elaboradas con <strong>granos seleccionados y procesados por la empresa <em>Monsantino</em></strong>.</p>
+							<blockquote>
+								<p>
+									Estamos frente a un brote grave de origen f&uacute;ngico. Si bien a&uacute;n no hay evidencia de transmisi&oacute;n directa a humanos por contacto, el consumo de alimentos contaminados podr&iacute;a representar un riesgo serio
+								</p>
+								<br />
+								<div class="llamadas">
+									, señal&oacute; el titular del &aacute;rea, Dr. Ernesto Vargas.
+								</div>
+							</blockquote>
+							<p>
+							En respuesta inmediata, el gobierno provincial <strong>orden&oacute; el retiro total del mercado de los lotes afectados</strong>, impuso <strong>una multa millonaria a la empresa Monsantino por omisi&oacute;n de controles sanitarios</strong>, y pidi&oacute; colaboraci&oacute;n federal para investigar la cadena de distribuci&oacute;n.<br>
+							Las asociaciones protectoras de animales y veterinarios independientes <strong>piden declarar la emergencia sanitaria</strong>, ante el creciente n&uacute;mero de mascotas con s&iacute;ntomas compatibles en barrios del oeste y norte capitalino.
+							</p>
+							<blockquote>
+								<p>
+									Nos est&aacute;n llegando consultas todos los d&iacute;as. Gatos, perros, incluso canarios y gallinas. Es como si el hongo ya hubiera cruzado todas las barreras naturales
+								</p>
+								<br />
+								<div class="llamadas">
+									, concluy&oacute; Santellan.
+								</div>
+							</blockquote>
+							</div>
+							<footer class="mt-3">
+								<small class="text-success">Comentarios (1952)</small>
+							</footer>
+<!--
+						</div>
+					</div>
+-->
+				</article>
+				<!-- NOTA Articulo 8 -->
+				<p class="text-center fw-bold text-success mb-4"><strong>Clarion – Secci&oacute;n Salud y Sociedad</strong></p>
+				<article class="mb-5  diario border-success shadow rounded-3 p-2" data-aos="fade-up" data-aos-delay="100">
+<!--
+					<div class="card bg-dark border-success shadow rounded-3">
+						<div class="card-body">
+-->
+							<header class="mb-3">
+								<hgroup>
+									<h1>&iquest;Primeras personas afectadas por el hongo Nova?</h1>
+									<h2>Apariciones de lesiones cut&aacute;neas y bucales generan preocupaci&oacute;n. El ANMAT evita dar respuestas y la OMS mantiene silencio.</h2>
+								</hgroup>
+								<time datetime="2026-02-05" pubdate>publicado 5 de febrero de 2026</time>
+							</header>
+							<div class="news-columns ">.
+							<figure class="text-center mb-4">
+								<img src="img/lengua.jpg" alt="Lengua de una persona con hongo Ophiocordyceps" class="img-fluid rounded" />
+								<figcaption>&iquest;Primeras personas afectadas?</figcaption>
+							</figure>
+							<p>
+							<strong>BUENOS AIRES</strong>.– En los &uacute;ltimos d&iacute;as, centros m&eacute;dicos de la Capital Federal y el conurbano comenzaron a reportar <strong>casos aislados de pacientes con s&iacute;ntomas </strong>cut&aacute;neos y orales inusuales, principalmente en lengua, cuello y manos. Las lesiones presentan <strong>caracter&iacute;sticas mic&oacute;ticas at&iacute;picas</strong>, resistentes a los tratamientos habituales.<br>
+							Fotograf&iacute;as exclusivas a las que accedi&oacute; Clarion muestran <strong>zonas esporuladas en mucosas orales</strong>, en lo que podr&iacute;a ser el <strong>primer indicio cl&iacute;nico de una infecci&oacute;n por el hongo Ophiocordyceps unilateralis Nova</strong>, la variante mutada detectada en cultivos y animales en distintos puntos del pa&iacute;s.<br>
+							Consultado por este medio, el vocero del <strong>ANMAT</strong> evit&oacute; dar declaraciones concluyentes. “Estamos monitoreando los casos. Por ahora son espor&aacute;dicos, no hay indicios de una propagaci&oacute;n sostenida”, fue la &uacute;nica respuesta oficial.<br>
+							No obstante, fuentes m&eacute;dicas del Hospital Ramos Mej&iacute;a, que pidieron mantener el anonimato, confirmaron al menos <strong>17 casos sospechosos</strong> atendidos entre enero y la primera semana de febrero.</p>
+							<blockquote>
+								<p>
+									Los pacientes presentan ardor persistente, hinchaz&oacute;n y sensibilidad extrema al calor. En algunos casos se observan episodios breves de confusi&oacute;n o irritabilidad, pero no se puede confirmar un v&iacute;nculo directo a&uacute;n
+								</p>
+								<br />
+								<div class="llamadas">
+									, señal&oacute; un especialista del &aacute;rea de Infectolog&iacute;a.
+								</div>
+							</blockquote>
+							<p>
+							La Organizaci&oacute;n Mundial de la Salud (OMS) a&uacute;n no emiti&oacute; ning&uacute;n comunicado oficial, mientras que los organismos de salud nacionales y provinciales iniciaron investigaciones preliminares sobre un posible nexo entre estos casos y el consumo de productos alimenticios contaminados, especialmente vinos, verduras y derivados de cereales.<br>
+							La empresa <em>Monsantino</em>, creadora de la l&iacute;nea de cultivos NovaGreen que incluye modificaciones gen&eacute;ticas con Ophiocordyceps, no respondi&oacute; a los reiterados pedidos de entrevista de este diario.<br>
+							Las grandes farmac&eacute;uticas, por ahora, recomiendan el uso de antif&uacute;ngicos comunes como fluconazol y terbinafina, aunque en la mayor&iacute;a de los casos solo ofrecen alivio parcial de los s&iacute;ntomas.</p>
+							<blockquote>
+								<p>
+									Estamos ante una micolog&iacute;a que no se comporta como ninguna otra. No sabemos si estamos viendo el principio de algo mayor… o si ya es demasiado tarde
+								</p>
+								<br />
+								<div class="llamadas">
+									, sostuvo en off un profesional del Instituto Malbr&aacute;n.
+								</div>
+							</blockquote>
+							<p>
+								Mientras tanto, el silencio institucional pesa m&aacute;s que los s&iacute;ntomas visibles. El miedo se filtra por las comisuras de cada boca afectada, aunque oficialmente, la infecci&oacute;n sigue siendo “controlada”.
+							</p>
+							<figure class="text-center mb-4">
+								<img src="img/cuello.jpg" alt="cuello de una persona con hongo Ophiocordyceps" class="img-fluid rounded"/>
+								<figcaption>&iquest;Primeras personas afectadas?</figcaption>
+							</figure>
+							</div>
+							<footer class="mt-3">
+								<small class="text-success">Comentarios (65002)</small>
+							</footer>
+<!--
+						</div>
+					</div>
+-->
+				</article>
+				<!-- NOTA Articulo 9-->
+					<p class="text-center fw-bold text-success mb-4"><strong>Nota cient&iacute;fica publicada en revista extranjera – "Journal of Synthetic Biology"</strong></p>
+				<article class="mb-5  diario border-success shadow rounded-3 p-2" data-aos="fade-up" data-aos-delay="100">
+<!--
+					<div class="card bg-dark border-success shadow rounded-3">
+						<div class="card-body">
+-->
+							<header class="mb-3">
+								<hgroup>
+									<h1>Emerging Symbiotic Fungal Pathogens in Agricultural Genomics</h1>
+									<h2>extracto:</h2>
+								</hgroup>
+								<time datetime="2026-03-05" pubdate>publicado Marzo 2026</time>
+							</header>
+<!--
+							<div class="news-columns ">
+-->
+							<blockquote>
+								<p>Los simbiontes artificiales basados en Cordyceps est&aacute;n mostrando un patr&oacute;n inusual de horizontalidad gen&eacute;tica. En ciertos experimentos, la mutaci&oacute;n espont&aacute;nea gener&oacute; variantes capaces de colonizar tejidos vivos m&aacute;s all&aacute; del hospedador vegetal original…”
+								</p>
+								<br />
+							</blockquote>
+<!--
+							</div>
+-->
+							<footer class="mt-3">
+								<small class="text-success">Comentarios (234)</small>
+							</footer>
+<!--
+						</div>
+					</div>
+-->
+				</article>
+				<!-- NOTA Articulo 10-->
+				<p class="text-center fw-bold text-success mb-4"><strong>Acapulco Express – Internacionales</strong></p>
+				<article class="mb-5  diario border-success shadow rounded-3 p-2" data-aos="fade-up" data-aos-delay="100">
+<!--
+					<div class="card bg-dark border-success shadow rounded-3">
+						<div class="card-body">
+-->
+							<header class="mb-3">
+								<hgroup>
+									<h1>Ophiocordyceps no tiene freno: M&eacute;xico tambi&eacute;n afectado</h1>
+									<h2>Campesinos de Chapultepec denuncian p&eacute;rdidas totales y lesiones tras manipular cultivos transg&eacute;nicos de origen argentino.</h2>
+								</hgroup>
+								<time datetime="2026-03-13" pubdate>publicado 13 de marzo de 2026</time>
+							</header>
+							<div class="news-columns ">.
+							<figure  class="text-center mb-4">
+								<img src="img/cultivos.jpg" alt="Cultivos afectados por el hongo Ophiocordyceps" />
+								<figcaption>&iquest;M&egrave;xico que hara ahora con el Hongo Nova?</figcaption>
+							</figure>
+							<p>
+							<strong>M&eacute;XICO, ESTADO DE M&eacute;XICO</strong>.– El malestar no es solo f&iacute;sico. En Chapultepec, decenas de agricultores enfrentan p&eacute;rdidas econ&oacute;micas devastadoras tras confirmar que sus cultivos fueron <strong>contaminados con la cepa mutada del hongo Ophiocordyceps</strong>, presente en granos transg&eacute;nicos comercializados por la multinacional <strong><em>Monsantino</em></strong>.<br>
+							Apenas una semana atr&aacute;s, el Ministerio de Agricultura mexicano hab&iacute;a emitido un comunicado <strong>autorizando el ingreso de semillas NovaGreen-12</strong>, sin mencionar los riesgos sanitarios detectados en pa&iacute;ses como Argentina, Chile o Uruguay.<br>
+							Hoy, los campos est&aacute;n vac&iacute;os y los s&iacute;ntomas comienzan a aparecer. <strong>Lesiones rojizas, ardor e inflamaci&oacute;n en manos y antebrazos</strong> son reportadas por trabajadores que <strong>no llegaron siquiera a consumir los alimentos, sino que apenas los manipularon</strong>.</p>
+							<blockquote>
+								<p>
+									Empezamos a ver que los granos estaban raros, como con polvillo, pero nos dijeron que era normal. Ahora tenemos a media comunidad con las manos en carne viva
+								</p>
+								<br />
+								<div class="llamadas">
+									, declar&oacute; Alejandro T., productor de la zona.
+								</div>
+							</blockquote>
+							<p>
+							Fotograf&iacute;as capturadas por este medio muestran <strong>esporas visibles en las vainas del ma&iacute;z y brotes de moho en las semillas de sorgo</strong>, lo que confirmar&iacute;a que la mutaci&oacute;n del hongo ya es <strong>altamente contagiosa por contacto</strong>, incluso en su etapa vegetal.<br>
+							Por su parte, el <strong>Centro de Salud Ambiental del Estado de M&eacute;xico</strong> activ&oacute; una alerta preventiva y recomend&oacute; evitar el consumo de granos importados y extremar las medidas de bioseguridad. Sin embargo, <strong>la distribuci&oacute;n de estas semillas ya hab&iacute;a alcanzado a m&aacute;s de 60 municipios</strong>.<br>
+							En paralelo, <strong>el gobierno federal ha convocado una reuni&oacute;n de emergencia con la Secretar&iacute;a de Salud, la UNAM y el Ej&eacute;rcito</strong>, para analizar protocolos de contenci&oacute;n en zonas rurales.</p>
+							<blockquote>
+								<p>
+									No estamos preparados para una crisis de esta magnitud”, reconoci&oacute; un funcionario bajo anonimato. “El hongo no solo se adapta, sino que se propaga m&aacute;s r&aacute;pido de lo que nuestras estructuras pueden responder
+								</p>
+								<br />
+							</blockquote>
+							<p>
+								Monsantino, como en otras regiones afectadas, <strong>no respondi&oacute; a los pedidos de informaci&oacute;n</strong>. La planta que posee en Sinaloa permanece cerrada desde el martes, sin personal ni custodia visible.<br>
+								El <strong>Ophiocordyceps unilateralis Nova</strong> ya no es un tema de papers cient&iacute;ficos: est&aacute; entre las manos de quienes dan de comer al continente. Y parece no tener intenci&oacute;n de detenerse.
+							</p>
+							<figure class="text-center mb-4">
+								<img src="img/mano.webp" alt="Mano de un trabajador rural con afecciones por hongo Ophiocordyceps" class="img-fluid rounded"/>
+								<figcaption>Me dulen las manos, boca, ya no aguanto m&aacute;s! fue el comentario de un campesino antes de cedarlo.</figcaption>
+							</figure>
+							</div>
+							<footer class="mt-3">
+								<small class="text-success">Comentarios (16254)</small>
+							</footer>
+<!--
+						</div>
+					</div>
+-->
+				</article>
+				<!-- NOTA Articulo 11 -->
+					<p class="text-center fw-bold text-success mb-4"><strong>Diario Global Times – Asia & Mundo</strong></p>
+				<article class="mb-5  diario border-success shadow rounded-3 p-2" data-aos="fade-up" data-aos-delay="100">
+<!--
+					<div class="card bg-dark border-success shadow rounded-3">
+						<div class="card-body">
+-->
+							<header class="mb-3">
+								<hgroup>
+									<h1>Yunnan bajo cuarentena: la mutaci&oacute;n del Ophiocordyceps activa alerta sanitaria mundial</h1>
+									<h2>China detecta esporas del hongo en cultivos y mercados h&uacute;medos. La OMS convoca comit&eacute; de emergencia ante propagaci&oacute;n global.</h2>
+								</hgroup>
+								<time datetime="2026-04-06" pubdate>publicado 06 de abril de 2026</time>
+							</header>
+							<div class="news-columns ">.
+							<figure  class="text-center mb-4">
+								<img src="img/Hongos-letales.jpg" alt="Nova invade China" class="img-fluid rounded"/>
+								<figcaption>Yunnan - China Nova FUERA de control</figcaption>
+							</figure>
+							<p>
+							<strong>KUNMING, PROVINCIA DE YUNNAN – REP&uacute;BLICA POPULAR CHINA</strong>.– Lo que comenz&oacute; como una <strong>infecci&oacute;n biol&oacute;gica contenida en Sudam&eacute;rica</strong>, hoy se vuelve una <strong>crisis sanitaria internacional</strong>. Autoridades chinas confirmaron la aparici&oacute;n de la variante Nova del hongo Ophiocordyceps unilateralis en <strong>productos frescos</strong> en mercados de Yunnan, tras reportes de <strong>personas con convulsiones y s&iacute;ntomas psicomotores severos</strong>.<br>
+							Los an&aacute;lisis de laboratorio revelaron una <strong>expansi&oacute;n activa de esporas resistentes a fungicidas comerciales</strong>, en alimentos distribuidos en las provincias de Sichuan, Guangxi y Guizhou. Las autoridades ordenaron el <strong>cierre inmediato de mercados, cuarentena en zonas rurales</strong>, y un operativo de desinfecci&oacute;n masiva.</p>
+							<blockquote>
+								<p>
+								Nunca vimos algo as&iacute;: el hongo ha modificado su estructura, resiste temperaturas y salta entre especies vegetales y animales con facilidad alarmante
+								</p>
+								<br />
+								<div class="llamadas">
+									, dijo el Dr. Wen Li, del Instituto de Salud de Kunming.
+								</div>
+							</blockquote>
+							<p>
+							La situaci&oacute;n en China ocurre a solo d&iacute;as de que <strong>pa&iacute;ses como Per&uacute;, Brasil, Inglaterra (Escocia), España, Sud&aacute;n, Sud&aacute;frica, Alemania, Estados Unidos, Rusia y Australia </strong>emitieran sus <strong>primeros reportes oficiales</strong> de casos sospechosos. En todos los casos, el com&uacute;n denominador es la importaci&oacute;n directa o indirecta de <strong>semillas y productos derivados de NovaGreen-12</strong>, desarrollados por la corporaci&oacute;n transnacional <em>Monsantino</em>.<br>
+							La <strong>OMS</strong> convoc&oacute; para mañana un <strong>comit&eacute; de emergencia internacional</strong>, luego de que la Oficina de Salud del Reino Unido informara que el brote en Edimburgo se <strong>hab&iacute;a cobrado tres vidas en las &uacute;ltimas 24 horas</strong>, tras presentar un cuadro cl&iacute;nico de fiebre, convulsiones y episodios de agresividad extrema.<br>
+							En <strong>Sud&aacute;n</strong>, los campos de sorgo han sido incinerados en su totalidad por las Fuerzas Armadas, mientras que en <strong>Australia</strong>, m&aacute;s del 30% de las plantaciones de cebada fueron declaradas contaminadas.<br>
+							En <strong>Per&uacute;</strong>, pequeños productores del Valle Sagrado alertaron sobre la aparici&oacute;n de “plantas enfermas que huelen a carne podrida”, y en <strong>Brasil</strong>, el Ministerio de Agricultura suspendi&oacute; la venta de harina nacional por la aparici&oacute;n de esporas en silos y molinos.<br>
+							<strong>La contaminaci&oacute;n cruzada entre especies, la resistencia al calor y la agresividad del hongo Nova han llevado a algunos cient&iacute;ficos a compararlo con un “<em>nuevo tipo de plaga global no convencional”</em></strong>.</p>
+							<blockquote>
+								<p>
+									La &uacute;nica forma comprobada de eliminarlo es mediante fuego a m&aacute;s de 300 grados Celsius. No es algo que puedas rociar con pesticidas y esperar lo mejor. Esto es otra escala
+								</p>
+								<br />
+								<div class="llamadas">
+									, afirm&oacute; la doctora Elke Hoffman del Instituto Robert Koch, Alemania.
+								</div>
+							</blockquote>
+							<p>
+							Las redes sociales han bautizado al fen&oacute;meno como <strong>“La Llama Silenciosa”</strong>, por la imagen repetida de <strong>campos en llamas</strong> alrededor del mundo, intentando frenar lo inevitable.<br>
+							Con m&aacute;s de una docena de pa&iacute;ses ya involucrados y miles de hect&aacute;reas perdidas, <strong>el mundo se prepara para una batalla no solo por la salud, sino por la supervivencia alimentaria</strong>.
+							</p>
+							<figure  class="text-center mb-4">
+								<img src="img/PERU2025-Alessandro-Catenazzi-hongo-de-anfibios-Peru.jpg" alt="Peru fauna afectada" />
+								<figcaption>En Peru flora y fauna se ven afectadas</figcaption>
+							</figure>
+							</div>
+							<footer class="mt-3">
+								<small class="text-success">Comentarios (34751)</small>
+							</footer>
+<!--
+						</div>
+					</div>
+-->
+				</article>
+				<!-- NOTA Articulo 12-->
+					<p class="text-center fw-bold text-success mb-4"><strong>Diario Naci&oacute;n Federal - Argentina</strong></p>
+				<article class="mb-5  diario border-success shadow rounded-3 p-2" data-aos="fade-up" data-aos-delay="100">
+<!--
+					<div class="card bg-dark border-success shadow rounded-3">
+						<div class="card-body">
+-->
+							<header class="mb-3">
+								<hgroup>
+									<h1>La Tierra arde: militares autorizan bombardeos en zonas infectadas</h1>
+									<h2>El mundo se sumerge en el caos: los alimentos escasean, los pueblos se incendian, y la guerra contra el hongo Nova se libra con fuego.</h2>
+								</hgroup>
+								<time datetime="2026-06-17" pubdate>publicado 17 de junio de 2026</time>
+							</header>
+							<div class="news-columns ">.
+							<figure  class="text-center mb-4">
+								<img src="img/villagralbelgrano.png" alt="Villa General Belgrano queda bajo las cenisas" />
+								<figcaption>Villa General Belgrano queda bajo las cenisas</figcaption>
+							</figure>
+							<p>
+							<strong>BUENOS AIRES, ARGENTINA</strong>. – Mientras miles de campos arden en las provincias argentinas y el humo tiñe de gris el cielo sobre Buenos Aires, el mundo parece haber entrado en un <strong>nuevo punto de no retorno</strong>.<br>
+							En las &uacute;ltimas semanas, la <strong>escasez total de alimentos no contaminados</strong> ha detonado una oleada de violencia y saqueos en ciudades como Rosario, La Plata, C&oacute;rdoba y Mar del Plata. Cosechas completas fueron incendiadas por vecinos desesperados, ante el m&iacute;nimo rumor de esporas. Algunas provincias establecieron toques de queda permanentes, mientras el gobierno nacional declar&oacute; el estado de excepci&oacute;n alimentaria.<br>
+							<br>
+							<br>
+							Pero la situaci&oacute;n es global.
+							</p>
+							<figure  class="text-center mb-4">
+								<img src="img/ref665_6.jpeg" alt="cuello de una persona con hongo Ophiocordyceps" />
+								<figcaption>&iquest;Queda alguien en las calles de San Telmo?</figcaption>
+							</figure>
+							<hr>
+							<h1>EL MUNDO, EN LLAMAS</h1>
+							<p>
+							En <strong>Estados Unidos</strong>, la Fuerza A&eacute;rea confirm&oacute; haber <strong>bombardeado con napalm ciudades enteras</strong> en el centro agr&iacute;cola de Iowa, luego de perder contacto con tres bases del Centro de Control F&uacute;ngico.<br>
+							<strong>Rusia</strong>, por su parte, orden&oacute; el uso de <strong>termob&aacute;ricas</strong> sobre poblados rurales del sur de Siberia.<br>
+							En India, decenas de miles de personas fueron evacuadas de Uttar Pradesh, tras brotes violentos de infecciones humanas con signos de rabia.<br>
+							El miedo al contagio y la imposibilidad de contener las esporas ha desatado el caos: la gente incendia sus propios barrios, los cuerpos no se entierran, las comidas se queman antes de probarse.</p>
+							<figure  class="text-center mb-4">
+								<img src="img/ref665_5.jpeg" alt="ciudades calcinadas" />
+								<figcaption>Rio Cuarto ya no existe - ciudades calcinadas.</figcaption>
+							</figure>
+							<blockquote>
+								<p>
+									Nos convertimos en guardianes del fuego. Quemamos a los nuestros. No hay otra defensa.
+								</p>
+								<br />
+								<div class="llamadas">
+									— Testimonio de Emilia G., m&eacute;dica de frontera en la provincia de San Juan.
+								</div>
+							</blockquote>
+							</div>
+							<footer class="mt-3">
+								<small class="text-success">Comentarios (4351)</small>
+							</footer>
+<!--
+						</div>
+					</div>
+-->
+				</article>
+				<!-----------------------------fin notas ------------------------------------------------>
+			</section>
+		</main> 
+		<script>
+			AOS.init({
+				duration: 1200,
+				once: true
+			});
+		</script>       
+		<footer id="pie">Derechos Reservados &copy; 2025 - Claudio Segura&nbsp;<a id="muestra-hora"></a></footer>
+	</body>
 </html>

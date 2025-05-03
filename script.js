@@ -13,4 +13,20 @@ function gethora()  {
         // + now.getSeconds();
         document.getElementById('muestra-hora').innerHTML = time;
     }
-    setInterval(gethora, 1000);
+    
+$(document).on('ready', function () {
+	// initialization of aos
+	AOS.init({
+	  duration: 650,
+	  once: true
+	});
+});
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+
+setInterval(gethora, 1000);

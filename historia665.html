@@ -1,159 +1,241 @@
 <!doctype html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="description" content="Ejemplo de HTML5" />
-        <meta name="keywords" content="HTML5, CSS3, JavaScript, UNO,Polo Marcos Paz" />
-        <title>Polo universitario Marcos Paz - Claudio Segura ejemplo Diario Distopico</title>
-       <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Labrada:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css" />
-        <script type="text/javascript" src="script.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
+<html lang="es" data-bs-theme="dark">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Ejemplo de HTML5" />
+		<meta name="keywords" content="HTML5, CSS3, JavaScript, UNO,Polo Marcos Paz" />
+		<title>Polo universitario Marcos Paz - Claudio Segura ejemplo Diario Distopico</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Labrada:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<!-- popper -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<!-- BOOTSTRAP 5 -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+		<!--
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+		-->
+		<!-- BOOTSTRAP 5 Bundle js-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+		<!-- SCROOLL REVEAL JS LIBRARY CDN -->
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+				<!-- AOS animacion -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- personales -->
+		<link rel="stylesheet" href="styles.css" />
+		<script type="text/javascript" src="script.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
     <body>
-        <header class="headDiario">
-            <div class="cajadetiempo">
-                Tiempo para las pr&oacute;ximas 24hs: Soleado con alto &iacute;ndice de esporas.<br /><span
-                    style="font-style: normal"
-                    >Viento: 27km/h Este; Temperatura: 21&deg;C; Hum: 62%</span
-                >
-            </div>
-            <div class="logo">
-                <img src="img/icorefugio665.png" alt="Refugio 665 Bs. As. Marcos Paz" />
-            </div>
-            <div id="tituloh1">Refugio 665</div>
-        </header>
-        <div class="subhead">Bs. As. - 8 de Noviembre 2036 - Historia del refugio 665</div>
-        <nav id="menu">
-           <ul>
-                <li><a href="diario665.html">Diario del refugio</a></li>
-                <li><a href="historia665.html">Historia del refugio</a></li>
-                <li><a href="noticias.html">Diarios y Noticias hist&oacute;ricas</a></li>
-                <li>Ejemplo 2</li>
-                 <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <main>
-        <section id="historia665">
-            <br />
-            <br />
-            <br />
-            <details>
-                <summary>&iquest;Quienes estamos detr&aacute;s del refugio 665?</summary>
-                <p>
-                    El refugio 665 fue reinaugurado a fines del 2028 porel cuerpo de militares a cargo del general
-                    Prats, luego de la expansi&oacute;n del hongo Nova.<br />
-                    Lo que queda hoy de aquel refugio es una pequeño faro de lo que fue en sumomento, luego del
-                    incidente.<br />
-                    Tenemos el &aacute;rea de medicina, donde contamos con la Dra. Emma Rinaldi: ex microbi&oacute;loga
-                    de la UBA que descubri&oacute; una mutaci&oacute;n del hongo que se activa con feromonas humanas.
-                    Est&aacute; encargada de encontrar una cura.<br />
-                    El intendente o encargado del refugio es quien les escribe: <strong>Sim&oacute;n Varela</strong
-                    ><br />
-                    Soy un ex polic&iacute;a de la zona.
-                </p>
-            </details>
-            <details>
-                <summary>&iquest;Donde estamos?</summary>
-                <p>
-                    El refugio 665 est&aacute; ubicado en la antigua f&aacute;brica de productos alimenticios y planta
-                    de desarrollos de nuevos nutrientes en la ex Bonafide-Nutrovo adquirida por Laboratorios Farmha
-                    S.R.L.<br />
-                    est&aacute; en el antiguo kil&oacute;metro 50 de la ruta 200 de Buenos Aires.
-                </p>
-            </details>
-            <article class="notaalter">
-                <header>
-                    <hgroup>
-                        <h1>Sobre nosotros</h1>
-                        <h2>Historia del refugio</h2>
-                    </hgroup>
-                    <time datetime="2029-11-10" pubdate>publicado 10-11-2029 </time>
-                </header>
-                <figure class="imgnota">
-                    <img src="img/ref665_7.jpeg" alt="Refugio 665" />
-                    <figcaption>Refugio Marcos Paz 665</figcaption>
-                </figure>
-                <p>
-                    El Refugio 665 se construy&oacute; aprovechando un viejo centro de log&iacute;stica e
-                    investigaci&oacute;n alimenticia, con galpones enormes, f&aacute;cil acceso al campo, y una red de
-                    t&uacute;neles subterr&aacute;neos que conectaban con las distintas unidades de la fabrica Nutrovo
-                    Bonafide.<br />
-                    Fue improvisado por los militares que llegaron a Marcos Paz, dirigidos por el General Prats. El
-                    mismo estuvo al principio formado por un grupo mixto de cient&iacute;ficos, militares retirados y
-                    familias locales que decidieron quedarse y resistir en lugar de huir.<br />
-                    El refugio como muchos otros surgi&oacute; en medio del colapso, las pocas zonas a&uacute;n libres
-                    del hongo se convirtieron en n&uacute;cleos de refugios autosuficientes, donde se cultiva
-                    manualmente, se filtra el aire y se controlan estrictamente las entradas.
-                </p>
-                <figure class="imgnota">
-                    <img src="img/ref665_4.jpeg" alt="Refugio 665" />
-                    <figcaption>refugio Pergamino 442</figcaption>
-                </figure>
-                <p>
-                    Se estima que durante el 2026 y 2027 se construyeron m&aacute;s de 90.000 refugios alrededor del
-                    mundo, de los cuales 10 corresponden a territorio argentino. Sin embargo, solo tres siguen
-                    operativos y en contacto durante 2036:
-                </p>
-                <ol class="listasinpuntos">
-                    <li>Refugio 665 – Marcos Paz</li>
-                    <li>Refugio 1820 – Tandil</li>
-                    <li>Refugio 442 – Pergamino</li>
-                </ol>
-                <figure class="imgnota">
-                    <img src="img/ref665_3.jpeg" alt="Refugio 3421" />
-                    <figcaption>Refugio Tandil 1820</figcaption>
-                </figure>
-                <p>
-                    El resto est&aacute; incomunicado o confirmado como perdido, debido a falta de cultivos,
-                    infiltraciones por esporas, o ataques violentos por parte de infectados y desesperados.
-                </p>
-                <blockquote>
-                    <p>
-                        Nos alimentamos con lo poco que plantamos. Sellamos las puertas. El aire entra por filtros que
-                        cambiamos cada semana con lo &uacute;ltimo que queda. Cada noche escuchamos fuego y gritos
-                        afuera. Y rezamos.<br />
-                    </p>
-                    <br />
-                    <div class="llamadas">
-                        — Fragmento de carta an&oacute;nima hallada en un dron ca&iacute;do, cerca del per&iacute;metro
-                        del Refugio 665.
-                    </div>
-                </blockquote>
+		<header class="bg-dark text-light py-3" style="background-image: url('img/refugio665.png');">
+			<div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+				<div class="cajadetiempo" data-aos="fade-down">
+					Tiempo para las pr&oacute;ximas 24hs: Soleado con alto &iacute;ndice de esporas.<br />
+					<span style="font-style: normal">
+					Viento: 27km/h Este; Temperatura: 21&deg;C; Hum: 62%
+					</span>
+				</div>
+				<div class="mb-4 mb-md-0" data-aos="zoom-in">
+					<img src="img/icorefugio665.png" alt="Refugio 665 Bs. As. Marcos Paz" class="img-fluid" style="max-height: 80px;">
+				</div>
+				<div data-aos="fade-down">
+					<h1 class="h3 mb-0 text-center text-md-end">Refugio 665</h1>
+				</div>
+			</div>
+		</header>
+		<!-- sub header -->
+		<div class="bg-success text-light py-2" data-aos="fade-up">
+			<div class="container text-center small">
+				Bs. As. - 8 de Noviembre 2036 - Historia del Refugio 665
+			</div>
+		</div>
+		<!-- Navegacion -->
+		<nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark"> 
+			<div class="container-fluid">
+				<a class="navbar-brand" href="diario665.html">Diario 665</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="historia665.html">Historia del refugio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="noticias.html">Diarios y Noticias hist&oacute;ricas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contacto.html">Contactate con el refugio</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Buscar</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!-- principal -->
+        <main class="container-fluid my-5 text-dark">
+			<section id="historia665">
+				<!-- bootstrap cambio details to modal o collapse... -->
+				<div class="accordion accordion-flush" id="accordionFlushExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+						   &iquest;Quienes estamos detr&aacute;s del refugio 665?
+						  </button>
+						</h2>
+						<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+						  <div class="accordion-body">
+							  <p>
+								El refugio 665 fue reinaugurado a fines del 2028 por el cuerpo de militares a cargo del general Prats, luego de la expansi&oacute;n del hongo Nova.<br />
+								Lo que queda hoy de aquel refugio es una pequeño faro de lo que fue en sumomento, luego del incidente.<br />
+								Tenemos el &aacute;rea de medicina, donde contamos con la Dra. Emma Rinaldi: ex microbi&oacute;loga de la UBA que descubri&oacute; una mutaci&oacute;n del hongo que se activa con feromonas humanas. Est&aacute; encargada de encontrar una cura.<br />
+								El intendente o encargado del refugio es quien les escribe: <strong>Sim&oacute;n Varela</strong><br />
+								Soy un ex polic&iacute;a de la zona.
+							</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+							&iquest;Donde estamos?
+						  </button>
+						</h2>
+						<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+						  <div class="accordion-body">
+							<p>
+								El refugio 665 fue reinaugurado a fines del 2028 por el cuerpo de militares a cargo del general Prats, luego de la expansi&oacute;n del hongo Nova.<br />
+								Lo que queda hoy de aquel refugio es una pequeño faro de lo que fue en sumomento, luego del incidente.<br />
+								Tenemos el &aacute;rea de medicina, donde contamos con la Dra. Emma Rinaldi: ex microbi&oacute;loga de la UBA que descubri&oacute; una mutaci&oacute;n del hongo que se activa con feromonas humanas. Est&aacute; encargada de encontrar una cura.<br />
+								El intendente o encargado del refugio es quien les escribe: <strong>Sim&oacute;n Varela</strong><br />
+								Soy un ex polic&iacute;a de la zona.
+							</p>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<!--br />
+				<br />
+				<br />
+				<details>
+					<summary>&iquest;Quienes estamos detr&aacute;s del refugio 665?</summary>
+					<p>
+						El refugio 665 fue reinaugurado a fines del 2028 por el cuerpo de militares a cargo del general Prats, luego de la expansi&oacute;n del hongo Nova.<br />
+						Lo que queda hoy de aquel refugio es una pequeño faro de lo que fue en sumomento, luego del incidente.<br />
+						Tenemos el &aacute;rea de medicina, donde contamos con la Dra. Emma Rinaldi: ex microbi&oacute;loga de la UBA que descubri&oacute; una mutaci&oacute;n del hongo que se activa con feromonas humanas. Est&aacute; encargada de encontrar una cura.<br />
+						El intendente o encargado del refugio es quien les escribe: <strong>Sim&oacute;n Varela</strong><br />
+						Soy un ex polic&iacute;a de la zona.
+					</p>
+				</details>
+				<details>
+					<summary>&iquest;Donde estamos?</summary>
+					<p>
+						El refugio 665 est&aacute; ubicado en la antigua f&aacute;brica de productos alimenticios y planta de desarrollos de nuevos nutrientes en la ex Bonafide-Nutrovo adquirida por Laboratorios Farmha S.R.L.<br />
+						est&aacute; en el antiguo kil&oacute;metro 50 de la ruta 200 de Buenos Aires.
+					</p>
+				</details-->
+				<article class="notaalter">
+					<header>
+						<hgroup>
+							<h1>Sobre nosotros</h1>
+							<h2>Historia del refugio</h2>
+						</hgroup>
+						<time datetime="2029-11-10" pubdate>publicado 10-11-2029 </time>
+					</header>
+					<figure class="figure text-center mb-4" >
+						<img src="img/ref665_7.jpeg" alt="Refugio 665 Marcos Paz" class="figure-img img-fluid rounded float-start" />
+						<figcaption class="figure-caption text-dark text-right">Refugio Marcos Paz 665</figcaption>
+					</figure>
+					<p>
+						El Refugio 665 se construy&oacute; aprovechando un viejo centro de log&iacute;stica e investigaci&oacute;n alimenticia, con galpones enormes, f&aacute;cil acceso al campo, y una red de t&uacute;neles subterr&aacute;neos que conectaban con las distintas unidades de la fabrica Nutrovo
+						Bonafide.<br />
+						Fue improvisado por los militares que llegaron a Marcos Paz, dirigidos por el General Prats. El mismo estuvo al principio formado por un grupo mixto de cient&iacute;ficos, militares retirados y familias locales que decidieron quedarse y resistir en lugar de huir.<br />
+						El refugio como muchos otros surgi&oacute; en medio del colapso, las pocas zonas a&uacute;n libres del hongo se convirtieron en n&uacute;cleos de refugios autosuficientes, donde se cultiva manualmente, se filtra el aire y se controlan estrictamente las entradas.
+					</p>
+					<br />
+					<br />
+					<figure class="figure text-center mb-4">
+						<img src="img/ref665_4.jpeg" alt="Refugio 442 Pergamino" class="figure-img img-fluid rounded float-start"/>
+						<figcaption class="figure-caption text-dark text-right">refugio Pergamino 442</figcaption>
+					</figure>
+					<p>
+						Se estima que durante el 2026 y 2027 se construyeron m&aacute;s de 90.000 refugios alrededor del mundo, de los cuales 10 corresponden a territorio argentino. Sin embargo, solo tres siguen operativos y en contacto durante 2036:
+					</p>
+					<ul class="list-group">
+					  <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-info">
+						Refugio 665
+						<span class="badge badge-primary badge-pill">Marcos Paz</span>
+					  </li>
+					  <li class="list-group-item d-flex justify-content-between align-items-center">
+						Refugio 1820
+						<span class="badge badge-primary badge-pill">Tandil</span>
+					  </li>
+					  <li class="list-group-item d-flex justify-content-between align-items-center">
+						Refugio 442
+						<span class="badge badge-primary badge-pill">Pergamino</span>
+					  </li>
+					</ul>
+					<figure class="figure text-center mb-4">
+						<img src="img/ref665_3.jpeg" alt="Refugio 1820 Tandil"  class="figure-img img-fluid rounded float-start"/>
+						<figcaption class="figure-caption text-dark text-right">Refugio Tandil 1820</figcaption>
+					</figure>
+					<p>
+						El resto est&aacute; incomunicado o confirmado como perdido, debido a falta de cultivos,
+						infiltraciones por esporas, o ataques violentos por parte de infectados y desesperados.
+					</p>
+					<blockquote>
+						<p>
+							Nos alimentamos con lo poco que plantamos. Sellamos las puertas. El aire entra por filtros que
+							cambiamos cada semana con lo &uacute;ltimo que queda. Cada noche escuchamos fuego y gritos
+							afuera. Y rezamos.<br />
+						</p>
+						<br />
+						<div class="llamadas">
+							— Fragmento de carta an&oacute;nima hallada en un dron ca&iacute;do, cerca del per&iacute;metro
+							del Refugio 665.
+						</div>
+					</blockquote>
 
-                <p>Bit&aacute;cora del diario del General.</p>
-                <blockquote>
-                    <p>
-                        La situaci&oacute;n en Argentina empeora minuto a minuto. Desde hace una semana, no hay
-                        comunicaciones confiables con el interior del pa&iacute;s. Las estaciones de onda corta caen una
-                        tras otra. En ciudades como Salta, Trelew o Paran&aacute;, no se reportan señales humanas desde
-                        hace 48 horas.<br />
-                        El Ministerio de Defensa ha ordenado una l&iacute;nea de fuego permanente alrededor de los tres
-                        refugios activos, y autoriz&oacute; ataques preventivos ante cualquier brote cercano.
-                        <br />
-                        No hay margen de error. Cualquier contacto con el hongo significa una sentencia para todos.
-                    </p>
-                    <br />
-                    <br />
-                    <div class="llamadas">- ultima transmisi&oacute;n del <em>General Jos&eacute; L. Prats</em>.</div>
-                </blockquote>
+					<p>Bit&aacute;cora del diario del General.</p>
+					<blockquote>
+						<p>
+							La situaci&oacute;n en Argentina empeora minuto a minuto. Desde hace una semana, no hay comunicaciones confiables con el interior del pa&iacute;s. Las estaciones de onda corta caen una
+							tras otra. En ciudades como Salta, Trelew o Paran&aacute;, no se reportan señales humanas desde hace 48 horas.<br />
+							El Ministerio de Defensa ha ordenado una l&iacute;nea de fuego permanente alrededor de los tres refugios activos, y autoriz&oacute; ataques preventivos ante cualquier brote cercano.
+							<br />
+							No hay margen de error. Cualquier contacto con el hongo significa una sentencia para todos.
+						</p>
+						<br />
+						<br />
+						<div class="llamadas">- Ultima transmisi&oacute;n del <em>General Jos&eacute; L. Prats</em>.</div>
+					</blockquote>
 
-                <p>
-                    Esta es la transmisi&oacute;n de emergencia del refugio tanto formato OGG como MPEG para el sitio.
-                </p>
-                <audio controls autoplay>
-                    <source src="emergenciarefugio665.ogg" type="audio/ogg" />
-                    <source src="emergenciarefugio665.mp3" type="audio/mpeg" />
-                    Su navegador no soporta el tipo de audio del sitio...
-                </audio>
+					<p>
+						Esta es la transmisi&oacute;n de emergencia del refugio tanto formato OGG como MPEG para el sitio.
+					</p>
+					<audio controls autoplay>
+						<source src="emergenciarefugio665.ogg" type="audio/ogg" />
+						<source src="emergenciarefugio665.mp3" type="audio/mpeg" />
+						Su navegador no soporta el tipo de audio del sitio...
+					</audio>
 
-                <footer class="footernota">
-                    <p>coment&aacute;rios (13138)</p>
-                </footer>
-            </article>
-        </section>
-    </main>
+					<footer class="footernota">
+						<p>coment&aacute;rios (13138)</p>
+					</footer>
+				</article>
+			</section>
+		</main>
+		<script>
+				AOS.init({
+					duration: 1200,
+					once: true
+				});
+		</script>       
+		<footer id="pie">Derechos Reservados &copy; 2025 - Claudio Segura&nbsp;<a id="muestra-hora"></a></footer>
     </body>
 </html>
