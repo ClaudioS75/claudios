@@ -736,6 +736,13 @@ aside, #main {
     font-variation-settings: 'wght' 100;
   }
 }
+/*
+.card>img {
+    width: 100%;
+    height: h-100;
+    object-fit: cover;
+}
+*/
 /* google icons */
 .material-icons {
   font-family: 'Material Icons';
