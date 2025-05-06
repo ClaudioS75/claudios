@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es" data-bs-theme="blue">
+<html lang="es" data-bs-theme="dark">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="Ejemplo de HTML5" />
@@ -25,9 +25,9 @@
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<!-- google icons -->
-		    <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   
+		<!-- anime.js -->
+		<!--script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script-->
 		<!--link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=html" /-->
 		<!--link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite,home,search,settings" rel="stylesheet" /-->
@@ -35,7 +35,10 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- personales -->
 		<link rel="stylesheet" href="styles.css" />
+<!--
 		<script type="text/javascript" src="script.js"></script>
+-->
+		<script src="script.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
     <body>
@@ -88,170 +91,222 @@
 			</div>
 		</nav>
 		<!-- principal -->
-        <main class="container-fluid my-5 text-dark">
-
-
-        <section id="indice">
-		<p>
-		prueba de video:
-		 <video width="320" height="240" controls>
-		  <source src="vid/granbelgrano.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-		</video> 
-		</p>
-            <article class="mb-5  maquetado border-success shadow rounded-3 p-2" data-aos="fade-up" data-aos-delay="500">
-                <header class="mb-5">
-                    <hgroup>
-                        <h1>Polo universitario Marcos Paz - Universidad Nacional del Oeste</h1>
-                        <h2 class="text-bg-warning">Programacion web1 - Claudio segura</h2>
-                        <h3>&iquest;De que se trata la maqueta a presentar?</h3>
-                    </hgroup>
-                    <time datetime="2025-04-11" pubdate>Fecha: 11 de Abril del 2025</time>
-                </header>
-                <!--figure class="imgnota">
-                    <img src="img/semillatrigo.png" alt="Monsantino trigo transg&eacute;nico" />
-                    <figcaption>Monsantino trigo transg&eacute;nico</figcaption>
-                </figure-->
-				<div class="card" style="my-5">
-					<!--i class="fa fa-github" style="font-size:60px;color:red;"></i>
-					<i class="fa fa-html5" style="font-size:60px;color:red;"></i-->
-					<i class="fa fa-graduation-cap" style="font-size:60px;color:red;"></i>
-					<i class="fa fa-face-smile"></i>
-					<div class="pulse">
-						<i class="material-icons">cloud</i>
-						<span class="material-icons">favorite</span>
+		<main class="container-fluid my-5 text-dark bg-body">
+			<section id="indice">
+<!--
+				<div class="container mb-12 justify-content-centered">
+					<div class="embed-responsive embed-responsive-21by9" data-aos="fade-down">
+							 <video controls  autoplay>
+							  <source src="vid/granbelgrano.mp4" type="video/mp4">
+							Tu navegador no soporta el video chango!.
+						</video>
 					</div>
-				  <img src="..." class="card-img-top" alt="...">
-				  <div class="card-body">
-					<h5 class="card-title">&iquest;De que se trata la maqueta a presentar?</h5>
-					<p class="card-text">
-						El presente maquetado pretende utilizar y abordar todos los items visto en clase con el profesor.  Aondar en HTML y estilos CSS vistos en clase.<br>
-					Si bien no se utilizara empaquetados externos vistos en clases como flexbox y fonts, tratare de utlizizar los estilos y fonts que esten a mi alcance y sean de mi agrado para utilizar.
-					</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				  </div>
 				</div>
-                <p>
-					El presente maquetado pretende utilizar y abordar todos los items visto en clase con el profesor.  Aondar en HTML y estilos CSS vistos en clase.<br>
-					Si bien no se utilizara empaquetados externos vistos en clases como flexbox y fonts, tratare de utlizizar los estilos y fonts que esten a mi alcance y sean de mi agrado para utilizar.
-                    </p>
-
-						<h1>La historia o tema de la maqueta</h1>
-						<p>
-						La maqueta tendra como tema principal una historia distopica basada entre los a&ntilde;os 2023 a 2036 situada finalmente en 2036. Ademas la idea es que este basada en el sitio donde esta el Polo de Marcos Paz, con noticias de diarios para dar un poco del contexto del origen y el problema al que se enfrentan los personajes.<br>
-						La idea es abordar los siguientes puntos o matices para la misma:<br>
-						
-						
-                    </p>
-						<h2>La web tendra tres partes o secciones:</h2>
-						<p>
-						<strong>El diario:</strong> donde se tratan temas o reportes actuales del refugio.
-						<strong>La historia:</strong> Historia del propio refugio, ya que hubo un quiebre del mismo.
-						<strong>Recortes de diarios:</strong> lo que tratara de armar la historia y aparicion del problema.
-						</p>
-						<h3>El problema que se plantea:</h3>
-						<p>
-						Una Multinacional <strong>"Monsantino" </strong>crea un cultivo a partit de mutaciones geneticas en Argentina.
-						El mismo es comercializado en todo America y luego exportado a todo el mundo.<br>
-						La genetica del producto comienza a afectar a otros cultivos, luego insectos y animales para finalmente pasar a humanos.
-						Creando un problema alimenticio a nivel global donde se crean zonas seguras llamadas refugios.<br>
-						Hay varios refugios, pero nos centraremos en el refugio de Marcos Paz.
-						</p>
-						<h3>Est&eacute;tica y tono</h3>
-						<p>
-						La estetica y tono sera del tipo post-apocalipsis rural, con tecnolog&iacute;a de baja escala (molinos de viento, radios a v&aacute;lvula, armamento improvisado), y un ambiente de paranoia donde el peligro no siempre viene del exterior...<br>
-						Monsantino creara <strong>NovaGreen</strong> y dara el Origen del Brote NovaGreen-12 o <strong>Nova</strong><br>
-						<strong>Origen: </strong>A comienzos de 2023, la empresa biotecnol&oacute;gica Monsantino lanz&oacute; al mercado argentino una nueva variedad de trigo h&iacute;brido, denominado NovaGreen-12, promocionado como una soluci&oacute;n definitiva contra plagas rurales y capaz de adaptarse a cambios clim&aacute;ticos extremos. Lo que pocos sab&iacute;an era que este desarrollo utilizaba un hongo modificado gen&eacute;ticamente, derivado del Ophiocordyceps unilateralis, famoso por su capacidad de manipular insectos hospedadores.<br>
-						La modificaci&oacute;n consist&iacute;a en hacer al hongo simbi&oacute;tico con el trigo, para que repeliera naturalmente a los par&aacute;sitos. Funcion&oacute;... por un tiempo. Pero el hongo, incre&iacute;blemente adaptable, empez&oacute; a mutar. Resist&iacute;a pesticidas, sobreviv&iacute;a a heladas e incluso lograba mantenerse viable despu&eacute;s de la cocci&oacute;n.<br>
-						Para 2025, los primeros s&iacute;ntomas en humanos comenzaron a reportarse: ardores, irritaci&oacute;n extrema en mucosas y un extraño estado de agitaci&oacute;n en quienes consum&iacute;an pan, galletas u otros productos con NovaGreen. Lo que parec&iacute;a una intoxicaci&oacute;n alimentaria pronto escal&oacute;. Las convulsiones, la agresividad extrema y los ataques descontrolados se hicieron comunes. Las v&iacute;ctimas dejaban heridas profundas y sangrantes que tambi&eacute;n resultaban infecciosas.<br>
-						La infecci&oacute;n pas&oacute; de animales a humanos con facilidad. Mam&iacute;feros dom&eacute;sticos se volvieron agresivos. Gallinas se autodevoraban en corrales. Vacas saltaban cercas como si estuvieran pose&iacute;das. Y los primeros humanos infectados fueron encerrados… pero no por mucho tiempo....
-						</p>
-						
-						
-						<h3>Historia del Refugio 665 (Marcos Paz)</h3>
-						<p>
-						Contare c&oacute;mo se fund&oacute;  y donde se construy&oacute;, aprovechando un viejo centro de log&iacute;stica y laboratorio alimenticio de la zona, con galpones enormes, f&aacute;cil acceso al campo, y una red de t&uacute;neles subterr&aacute;neos que conectaban con otras empresas de la zona.<br>
-						Fue improvisado por un grupo de Mitirates profecionales,  cient&iacute;ficos, militares retirados y familias locales que decidieron quedarse y resistir en lugar de huir.<br>
-						Tambien voy a aundar en lo que era el refugio y en el incidente por filtracion del Hongo en el mismo y como lograron superarlo. Dando asi una segunda oportunidad y con ello menos personajes y personas en el refugio.
-						</p>
-						<h4>Personajes clave:</h4>
-<p>
-						<strong>Dra. Emma Rinaldi:</strong> ex microbi&oacute;loga de una universidad nacional de Buenos Aires que descubri&oacute; una mutaci&oacute;n del hongo, y que se activa con feromonas humanas. Est&aacute; obsesionada con encontrar una cura, incluso si eso implica probar con personas....
-<br>
-						<strong>Sim&oacute;n Varela:</strong> l&iacute;der actual del Refugio, un ex polic&iacute;a de la zona, habil en telecomunicaciones y electronica, respetado pero con m&eacute;todos discutibles.
-<br>
-						<strong>Lola: </strong>una niña que naci&oacute; en el refugio y parece tener una inmunidad natural al hongo. Se sospecha que su madre fue expuesta al Nova mientras estaba embarazada y logro superar el incidente.
-<br>
-</p>
-<h4>Diario del refugio</h4>
-<p>
-						Sera una zona, donde los personajes revelaran algunos <strong>conflictos</strong> internos:<br>
-						<strong>Peleas por los recursos:</strong> no todos quieren seguir cultivando org&aacute;nicamente, hay quien plantea arriesgarse y salir a robar a otros.<br>
-						<strong>Tensiones entre generaciones:</strong> los j&oacute;venes quieren salir del refugio y explorar, los mayores quieren mantener el aislamiento.<br>
-						<strong>Un grupo disidente:</strong> que anela tomar el control del Refugio y buscar comunicaci&oacute;n con los refugios perdidos, incluso usando tecnolog&iacute;as prohibidas.
-						<br>
-    <strong>Dar pistas de los Misterios de la exploraci&oacute;n:</strong><br>
-						Hay rumores de un “Refugio Central” al sur, que tiene acceso a tecnolog&iacute;a avanzada, energ&iacute;a limpia y una cura parcial.<br>
-						Exploradores del Refugio 665 salen cada tanto a buscar v&iacute;veres y noticias, pero algunos no regresan, y otros vuelven cambiados, m&aacute;s agresivos...
-						</p>
-						
+-->
+				<article class="mb-5  maquetado border-success shadow rounded-5 p-2 bg-light" data-aos="fade-up" data-aos-delay="500">
+					<header class="mb-5">
+						<hgroup>
+							<h1 class="text-bg-secondary">Polo universitario Marcos Paz - Universidad Nacional del Oeste</h1>
+							<h2 class="text-bg-info">Programacion web1 - Claudio segura</h2>
+<!--
+							<h3 class="text-bg-light">&iquest;De que se trata la maqueta a presentar?</h3>
+-->
+						</hgroup>
+						<time class="text-bg-secondary" datetime="2025-04-11" pubdate>Fecha: 11 de Abril del 2025</time>
+					</header>
+					<!--figure class="imgnota">
+						<img src="img/semillatrigo.png" alt="Monsantino trigo transg&eacute;nico" />
+						<figcaption>Monsantino trigo transg&eacute;nico</figcaption>
+					</figure-->
+					<div class="row justify-content-around  g-3">
+						<div class="col-12 col-lg-4 col-md-6  ms-auto">
+							<div class="card bg-secondary rounded-3 mb-2  h-100" style="my-5" data-aos="zoom-out-right">
+								<!--i class="fa fa-github" style="font-size:60px;color:red;"></i>
+								<i class="fa fa-html5" style="font-size:60px;color:red;"></i-->
+								<!--<i class="fa fa-comment" style="font-size:60px;color:lightblue;"></i>-->
+								<div class="pulse">
+									<span class="material-icons">
+									description
+									</span>
+								</div>
+								<img src="img/github.jpg" class="card-img-top  img-fluid" alt="github">
+								<div class="card-body bg-secondary">
+									<h5 class="card-title text-bg-info">&iquest;De que se trata la maqueta a presentar?</h5>
+									<p class="card-text text-bg-dark">
+										El presente maquetado pretende utilizar y abordar todos los items visto en clase con el profesor.  Aondar en HTML y estilos CSS vistos en clase.<br>
+										Si bien no se utilizara empaquetados externos vistos en clases como flexbox y fonts, tratare de utlizizar los estilos y fonts que esten a mi alcance y sean de mi agrado para utilizar.
+									</p>
+									<a href="#" class="btn btn-primary">Presentaci&oacute;n...</a>
+							  </div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 col-md-6  ms-auto">
+							<div class="card bg-secondary rounded-3 mb-2  h-100" style="my-5" data-aos="zoom-out-left">
+								<div class="pulse">
+									<i class="material-icons">help</i>
+								</div>
+								<img src="img/665iglesia1.jpg" class="card-img-top img-fluid" alt="iglesias en llamas...">
+								<div class="card-body bg-secondary">
+									<h5 class="card-title text-bg-info">La historia o tema de la maqueta</h5>
+									<p class="card-text text-bg-dark">
+										La maqueta tendra como tema principal una historia distopica basada entre los a&ntilde;os 2023 a 2036 situada finalmente en 2036. Ademas la idea es que este basada en el sitio donde esta el Polo de Marcos Paz, con noticias de diarios para dar un poco del contexto del origen y el problema al que se enfrentan los personajes.
+									</p>
+									<a href="noticias.html" class="btn btn-primary">ir a los recortes de diarios...</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 col-md-6  ms-auto">
+							<div class="card bg-secondary rounded-3 mb-2  h-100" style="my-5" data-aos="zoom-out-right">
+								<div class="pulse">
+									<i class="material-icons">ads_click</i>
+								</div>
+								<div class="card-img-top img-fluid" >
+										 <video width="320" height="240" controls  autoplay>
+										  <source src="vid/granbelgrano.mp4" type="video/mp4">
+										Tu navegador no soporta el video chango!.
+									</video>
+								</div>
+								<div class="card-body bg-secondary">
+									<h5 class="card-title text-bg-info">Los puntos o matices que veremos</h5>
+									<p class="card-text text-bg-dark">
+										<strong>La web tendra tres partes o secciones:</strong></p>
+										<ul class="list-group">
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												El diario:
+												Donde se tratan temas o reportes actuales del refugio.
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												La historia:
+												Historia del propio refugio, ya que hubo un quiebre del mismo.
+											</li>
+											<li class="list-group-item d-flex justify-content-between align-items-center">
+												Recortes de diarios:
+												Lo que tratara de armar la historia y aparici&oacute;n del problema.
+											</li>
+										</ul>
+									</p>
+<!--
+									<a href="#" class="btn btn-primary">Presentaci&oacute;n...</a>
+-->
+								</div>
+							</div>
+						</div>
+						<!--row-->
+						</div>
+						<div class="row justify-content-around g-3">
+						<div class="col-12 col-lg-4 col-md-6  ms-auto">
+							<div class="card bg-secondary rounded-3 mb-2  h-100" style="my-5" data-aos="zoom-out-left">
+								<div class="pulse">
+									<i class="material-icons">track_changes</i>
+								</div>
+								<img src="img/novagen12.jpg" class="card-img-top img-fluid" alt="...">
+								<div class="card-body bg-secondary">
+									<h5 class="card-title text-bg-info">El problema que se plantea</h5>
+									<p class="card-text text-bg-dark">
+										Una Multinacional <strong>"Monsantino" </strong>crea un cultivo a partit de mutaciones geneticas en Argentina.
+										El mismo es comercializado en todo America y luego exportado a todo el mundo.<br>
+										La genetica del producto comienza a afectar a otros cultivos, luego insectos y animales para finalmente pasar a humanos. Creando un problema alimenticio a nivel global donde se crean zonas seguras llamadas refugios.<br>
+										Hay varios refugios, pero nos centraremos en el refugio de Marcos Paz.
+									</p>
+									<a href="noticias.html" class="btn btn-primary">ir a los recortes de diarios...</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 col-md-6 ">
+							<div class="card bg-secondary rounded-3 mb-2  h-100" style="my-5" data-aos="zoom-out-right">
+								<div class="pulse">
+									<i class="material-icons">opacity</i>
+								</div>
+								<img src="img/665iglesia2.jpg" class="card-img-top img-fluid" alt="Plaza de Marcos Paz 2034">
+								<div class="card-body bg-secondary">
+									<h5 class="card-title text-bg-info">Est&eacute;tica y tono</h5>
+									<p class="card-text text-bg-dark">
+										La estetica y tono sera del tipo post-apocalipsis rural, con tecnolog&iacute;a de baja escala (molinos de viento, radios a v&aacute;lvula, armamento improvisado), y un ambiente de paranoia donde el peligro no siempre viene del exterior...<br>
+										Monsantino creara <strong>NovaGreen</strong> y dara el Origen del Brote NovaGreen-12 o <strong>Nova</strong><br>
+										<strong>Origen: </strong>A comienzos de 2023, la empresa biotecnol&oacute;gica Monsantino lanz&oacute; al mercado argentino una nueva variedad de trigo h&iacute;brido, denominado NovaGreen-12, promocionado como una soluci&oacute;n definitiva contra plagas rurales y capaz de adaptarse a cambios clim&aacute;ticos extremos. Lo que pocos sab&iacute;an era que este desarrollo utilizaba un hongo modificado gen&eacute;ticamente, derivado del Ophiocordyceps unilateralis, famoso por su capacidad de manipular insectos hospedadores.<br>
+										La modificaci&oacute;n consist&iacute;a en hacer al hongo simbi&oacute;tico con el trigo, para que repeliera naturalmente a los par&aacute;sitos. Funcion&oacute;... por un tiempo. Pero el hongo, incre&iacute;blemente adaptable, empez&oacute; a mutar. Resist&iacute;a pesticidas, sobreviv&iacute;a a heladas e incluso lograba mantenerse viable despu&eacute;s de la cocci&oacute;n.<br>
+										Para 2025, los primeros s&iacute;ntomas en humanos comenzaron a reportarse: ardores, irritaci&oacute;n extrema en mucosas y un extraño estado de agitaci&oacute;n en quienes consum&iacute;an pan, galletas u otros productos con NovaGreen. Lo que parec&iacute;a una intoxicaci&oacute;n alimentaria pronto escal&oacute;. Las convulsiones, la agresividad extrema y los ataques descontrolados se hicieron comunes. Las v&iacute;ctimas dejaban heridas profundas y sangrantes que tambi&eacute;n resultaban infecciosas.<br>
+										La infecci&oacute;n pas&oacute; de animales a humanos con facilidad. Mam&iacute;feros dom&eacute;sticos se volvieron agresivos. Gallinas se autodevoraban en corrales. Vacas saltaban cercas como si estuvieran pose&iacute;das. Y los primeros humanos infectados fueron encerrados… pero no por mucho tiempo....
+									</p>
+<!--
+									<a href="noticias.html" class="btn btn-primary">ir a los recortes de diarios...</a>
+-->
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 col-md-6  ms-auto">
+							<div class="card bg-secondary rounded-3 mb-2  h-100" style="my-5" data-aos="zoom-out-left">
+								<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+								<span class="sr-only">Loading...</span>
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body bg-secondary">
+									<h5 class="card-title text-bg-info">Historia del Refugio 665 (Marcos Paz)</h5>
+									<p class="card-text text-bg-dark">
+										Contare c&oacute;mo se fund&oacute;  y donde se construy&oacute;, aprovechando un viejo centro de log&iacute;stica y laboratorio alimenticio de la zona, con galpones enormes, f&aacute;cil acceso al campo, y una red de t&uacute;neles subterr&aacute;neos que conectaban con otras empresas de la zona.<br>
+										Fue improvisado por un grupo de Mitirates profecionales,  cient&iacute;ficos, militares retirados y familias locales que decidieron quedarse y resistir en lugar de huir.<br>
+										Tambien voy a aundar en lo que era el refugio y en el incidente por filtracion del Hongo en el mismo y como lograron superarlo. Dando asi una segunda oportunidad y con ello menos personajes y personas en el refugio.
+									</p>
+									<a href="historia665.html" class="btn btn-primary">ir a la historia del refugio...</a>
+								</div>
+							</div>
+						</div>
+						<!--row-->
+						</div>
+						<div class="row justify-content-around g-3">
+						<div class="col-12 col-lg-4 col-md-6  ms-auto">
+							<div class="card bg-secondary rounded-3 mb-2  h-100" style="my-5" data-aos="zoom-out-right">
+								<div class="pulse">
+									<i class="material-icons">face</i>
+								</div>
+								<img src="img/draemmaylola.gif" class="card-img-top  img-fluid" alt="Dra Emma Rinaldi y Lola">
+								<div class="card-body bg-secondary">
+									<h5 class="card-title text-bg-info">Personajes clave</h5>
+									<p class="card-text text-bg-dark">
+										<strong>Dra. Emma Rinaldi:</strong> ex microbi&oacute;loga de una universidad nacional de Buenos Aires que descubri&oacute; una mutaci&oacute;n del hongo, y que se activa con feromonas humanas. Est&aacute; obsesionada con encontrar una cura, incluso si eso implica probar con personas....<br>
+										<strong>Sim&oacute;n Varela:</strong> l&iacute;der actual del Refugio, un ex polic&iacute;a de la zona, habil en telecomunicaciones y electronica, respetado pero con m&eacute;todos discutibles.<br>
+										<strong>Lola: </strong>una niña que naci&oacute; en el refugio y parece tener una inmunidad natural al hongo. Se sospecha que su madre fue expuesta al Nova mientras estaba embarazada y logro superar el incidente.
+									</p>
+<!--
+									<a href="noticias.html" class="btn btn-primary">ir a los recortes de diarios...</a>
+-->
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 col-md-6  ms-auto">
+							<div class="card bg-secondary rounded-3 mb-2  h-100" style="my-5" data-aos="zoom-out-left">
+								<div class="pulse">
+									<i class="material-icons">auto_stories</i>
+								</div>
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body bg-secondary">
+									<h5 class="card-title text-bg-info">Diario del refugio</h5>
+									<p class="card-text text-bg-dark">
+										Sera una zona, donde los personajes revelaran algunos <strong>conflictos</strong> internos:<br>
+										<strong>Peleas por los recursos:</strong> no todos quieren seguir cultivando org&aacute;nicamente, hay quien plantea arriesgarse y salir a robar a otros.<br>
+										<strong>Tensiones entre generaciones:</strong> los j&oacute;venes quieren salir del refugio y explorar, los mayores quieren mantener el aislamiento.<br>
+										<strong>Un grupo disidente:</strong> que anela tomar el control del Refugio y buscar comunicaci&oacute;n con los refugios perdidos, incluso usando tecnolog&iacute;as prohibidas.<br>
+										<strong>Dar pistas de los Misterios de la exploraci&oacute;n:</strong><br>
+										Hay rumores de un “Refugio Central” al sur, que tiene acceso a tecnolog&iacute;a avanzada, energ&iacute;a limpia y una cura parcial.<br>
+										Exploradores del Refugio 665 salen cada tanto a buscar v&iacute;veres y noticias, pero algunos no regresan, y otros vuelven cambiados, m&aacute;s agresivos...
+									</p>
+									<a href="diario665.html" class="btn btn-primary">ir al diario del refugio...</a>
+								</div>
+							</div>
+						</div>
+					</div>
 						<h3>Con todo esto, se pretende armar la historia troncal de la web y maquetado.</h3>
                 <footer class="footernota">
                     <p>Claudio Segura - Programaci&oacute;n web1 - Claudio segura</p>
                 </footer>
             </article>
-            
         </section>
-        <!--section id="diario665">
-        <div id="mainDiv"></div>
-        <br />
-        <button onclick="botonclick()">Click me</button>
-        <h1>Porfolio de im&aacute;genes</h1>
-
-        <p>Cambie el ta&ntilde;o del navegador, para mostrar im&aacute;genes seg&uacute;n la dimensi&oacute;n de la ventana...</p>
-        <picture>
-        <source media="(min-width:650px)" srcset="img_pink_flowers.jpg" />
-        <source media="(min-width:465px)" srcset="img_white_flower.jpg" />
-        <img src="img_orange_flowers.jpg" alt="Flowers" style="width: auto" />
-        </picture>
-        <p>Clic en la computadora o el Tel&eacute;fono o en el caf&eacute;...:</p>
-        <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379" />
-        <map name="workmap">
-        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html" />
-        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html" />
-        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html" />
-        </map>
-        <article>
-        <header>
-        <hgroup>
-        <h1>Gen&eacute;tica agraria</h1>
-        <h2>NovaGreen un &eacute;xito de Monsantino</h2>
-        </hgroup>
-        <time datetime="2023-11-10" pubdate>publicado 10-11-2023 </time>
-        </header>
-        <figure class="imgnota">
-        <img src="img/semillatrigo.png" alt="Monsantino trigo transg&eacute;nico"/>
-        <figcaption>Monsantino trigo transg&eacute;nico</figcaption>
-        </figure>
-        <p><strong>C&Oacute;RDOBA</strong>.- Monsantino -ahora controlada por Bajern - ha sido premiada por la <em>Municipalidad de R&iacute;o Cuarto</em>, esto le permite que su planta de gen&eacute;tica en el centro de experimentaci&oacute;n de semillas de un paso al futuro durante este 2023.</p>
-        <p>En 2013 el centro de experimentaci&oacute;n con semillas instalado en R&iacute;o Cuarto comenz&oacute; con el desarrollo de semillas modificadas gen&eacute;ticamente con el hongo Ophiocordyceps unilaterales capaces de persuadir a los depredadores naturales de trigo.<br> De esta manera queda firme la decisi&oacute;n del entonces intendente Juan Jure, de promulgar el uso intensivo de las nuevas semillas en loc campos de R&iacute;o Cuarto.</p>
-        <p><strong>Diario 1</strong> consult&oacute; a la empresa sobre el tema y aunque se excusaron de "no hacer ning&uacute;n comentario sobre la zona a utilizar”, conseguimos donde se realizara la primera plantaci&oacute;n de trigo modificado para la producci&oacute;n alimenticia.</p>
-
-        <footer class="footernota">
-        <p>coment&aacute;rios (138)</p>
-        </footer>
-        </article>
-        </section>
-        <!--aside id="columna">
-        <blockquote>Mensaje n&uacute;mero uno</blockquote>
-        <blockquote>Mensaje n&uacute;mero dos</blockquote>
-        </aside-->
         </main>
         <script>
 			AOS.init({
 				duration: 1200,
 				once: true
 			});
+			setInterval(gethora, 1000);
 		</script>   
         <footer id="pie">Derechos Reservados &copy; 2025 - Claudio Segura&nbsp;<a id="muestra-hora"></a></footer>
     </body>

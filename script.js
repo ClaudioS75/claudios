@@ -1,4 +1,6 @@
 let numerodeclicks = 0;
+const myModal = document.getElementById('myModal');
+const myInput = document.getElementById('myInput');
 
 function botonclick() {
     numerodeclicks = numerodeclicks + 1;
@@ -14,19 +16,9 @@ function gethora()  {
         document.getElementById('muestra-hora').innerHTML = time;
     }
     
-$(document).on('ready', function () {
-	// initialization of aos
-	AOS.init({
-	  duration: 650,
-	  once: true
-	});
-});
-
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
-
 myModal.addEventListener('shown.bs.modal', () => {
   myInput.focus()
 })
+
 
 setInterval(gethora, 1000);
