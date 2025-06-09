@@ -391,51 +391,97 @@
 					</div>
 				  </div>
 				</div>
-				<div class="row mt-5">
-				  <div class="col-lg-10 offset-lg-1">
-					<div class="bundle-offer" data-aos="fade-up" data-aos-delay="500">
-					  <div class="row align-items-center h-100">
-						<div class="card col-md-7 h-100">
-							<div class="card-header">
-								<i class="bi bi-box2-heart"></i>
-								<h3>Oferta de paquete especial</h3>
+				<div class="container text-center mb-2 pm-2">
+				  <div class="row row-cols-2" data-aos="fade-up" data-aos-delay="500">
+						<div class="col">
+							<div class="card h-100 mb-2">
+								<div class="card-header">
+									<i class="bi bi-box2-heart"></i>
+									<h3>Oferta de paquete especial</h3>
+								</div>
+								<p>Obtenga las versiones de tapa dura, libro electrónico y audiolibro en un paquete especial.</p>
+								<ul class="format-features">
+									<li><i class="bi bi-check-lg"></i> Ahorre un 20% en precios individuales</li>
+									<li><i class="bi bi-check-lg"></i> Pista de comentarios exclusiva del autor</li>
+									<li><i class="bi bi-check-lg"></i> Firmado digitalmente por el autor</li>
+								</ul>
+								<div class="bundle-price">
+									<span class="original">$54.97</span>
+									<span class="discounted">$43.99</span>
+								</div>
+								<a href="#" class="btn btn-success mb-3">Comprar ahora</a>
+								<img src="img/novagreen12special.png" alt="Consigue el paquete" class="rounded mx-auto d-block float-end">
 							</div>
-							
-						  <p>Obtenga las versiones de tapa dura, libro electrónico y audiolibro en un paquete especial.</p>
-						  <ul class="format-features">
-							<li><i class="bi bi-check-lg"></i> Ahorre un 20% en precios individuales</li>
-							<li><i class="bi bi-check-lg"></i> Pista de comentarios exclusiva del autor</li>
-							<li><i class="bi bi-check-lg"></i> Firmado digitalmente por el autor</li>
-						  </ul>
-						  <div class="bundle-price">
-							<span class="original">$54.97</span>
-							<span class="discounted">$43.99</span>
-						  </div>
-						  <a href="#" class="btn btn-success">Comprar ahora</a>
-						  <img src="img/novagreen12special.png" alt="Consigue el paquete" class="rounded mx-auto d-block float-end">
 						</div>
-						
-<!--
-						<div class="card col-md-5 h-100">
-						  <div class="bundle-image">
-							
-						  </div>
+						<div class="col">
+							<div class="card h-100 mb-2">
+								<div class="card-header">
+									<h3>Cont&aacutecteme</h3>
+								</div>
+								<div class="card-body">
+									<form method="post" action="https://api.web3forms.com/submit" id="claudios75contact">
+										<input type="hidden" name="access_key" value="a37a55e3-08b3-4be4-a2e4-b8e94721ba21">
+										<input type="hidden" name="from_name" value="Autor">
+										<input type="hidden" name="subject" value="Mensaje contacto Autor">
+										<input type="hidden" name="redirect" value="https://claudios75.github.io/claudios/index.html">
+										<div class="mb-3">
+											<label for="nombre" class="form-label">Nombre:</label>
+											<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Roberto Galan" required>
+										</div>
+										<div class="mb-3">
+											<label for="correo" class="form-label">Correo:</label>
+											<input type="email" class="form-control" id="correo" name="correo" placeholder="sucorreo@direccion.com" required>
+										</div>
+										<div class="form-group mt-3">
+										  <label for="subject">Asunto</label>
+										  <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Me encanto su libro!" required>
+										</div>
+										<div class="mb-3">
+											<label for="comentario" class="form-label">Mensaje:</label>
+											<textarea class="form-control" id="comentario" name="comentario" placeholder="El libro me pareci&oacute; genial!" rows="12" required></textarea>
+										</div>
+										<button type="submit" class="btn btn-custom">Enviar</button>
+									</form>
+								</div>
+							</div>
 						</div>
--->
-					  </div>
 					</div>
 				  </div>
 				</div>
 			  </div>
 			</section><!-- /Purchase Section -->
+
 		</main>
+		<footer id="pie">Derechos Reservados &copy; 2025 - Claudio Segura&nbsp;<a id="muestra-hora"></a>			  <!-- Scroll Top -->
+		<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a></footer>
 		 <script>
 			AOS.init({
 				duration: 1200,
 				once: true
 			});
 			setInterval(gethora, 1000);
+			/**
+			* Scroll top button
+			*/
+			let scrollTop = document.querySelector('.scroll-top');
+
+			function toggleScrollTop() {
+				if (scrollTop) {
+				  window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+				}
+			}
+			scrollTop.addEventListener('click', (e) => {
+				e.preventDefault();
+				window.scrollTo({
+				  top: 0,
+				  behavior: 'smooth'
+				});
+			});
+
+			window.addEventListener('load', toggleScrollTop);
+			document.addEventListener('scroll', toggleScrollTop);
+
 		</script>   
-        <footer id="pie">Derechos Reservados &copy; 2025 - Claudio Segura&nbsp;<a id="muestra-hora"></a></footer>
+       
     </body>
 </html>
