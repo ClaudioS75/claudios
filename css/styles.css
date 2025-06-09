@@ -11,6 +11,12 @@
 	--font-llamada:"Labrada", serif; /* de 100 a 900 */	
 	--border-radius: 10px;
 	--img-notapx:300px;
+  --background-color: #05531B; /* Background color for the entire website, including individual sections */
+  --default-color: #C4F7F6; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #FFFA92; /* Color de los titulos del index*/
+  --accent-color: #29EA9C; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #004E23; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 /* Reset básico */
 * {
@@ -103,7 +109,7 @@ article footer {
 }
 
 h1 {
-	font: bold 1.3em verdana, sans-serif;
+	font: bold 1.2em verdana, sans-serif;
 	color: var(--clarito-color);
 	padding: 1.5em;
 	background-color: var(--negrita-color);
@@ -225,7 +231,8 @@ column-width: 25em;
 }
 
 .nota{
-	background-image: url("img/fondodiario2.png");/*url("img/fondodiario1.png"),url("img/fondodiario2.png"); */
+	background-image: url("img/fondodiario2.png");
+	/*url("img/fondodiario1.png"),url("img/fondodiario2.png"); */
 	padding: 20px;
 	margin-bottom: 15px;
 	-webkit-column-width: 25em;
@@ -681,7 +688,8 @@ aside, #main {
 }
 
 .diario{
-	background-image: url("img/backgrounddiarios.png");/*url("img/fondodiario1.png"),url("img/fondodiario2.png"); */
+	background-image: url("img/backgrounddiarios.png");
+	/*url("img/fondodiario1.png"),url("img/fondodiario2.png"); */
 	padding: 20px;
 	margin-bottom: 15px;
 	opacity:0.8;
@@ -736,13 +744,7 @@ aside, #main {
     font-variation-settings: 'wght' 100;
   }
 }
-/*
-.card>img {
-    width: 100%;
-    height: h-100;
-    object-fit: cover;
-}
-*/
+
 /* google icons */
 .material-icons {
   font-family: 'Material Icons';
@@ -768,3 +770,351 @@ aside, #main {
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
+/* css libros y sombras */
+/*--------------------------------------------------------------
+# milibro Section
+--------------------------------------------------------------*/
+.milibro {
+  padding: 120px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.milibro .libro-milibro-contenido .libro-genero {
+  display: inline-block;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 30px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.milibro .libro-milibro-contenido h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--heading-color);
+  line-height: 1.2;
+}
+
+@media (max-width: 992px) {
+  .milibro .libro-milibro-contenido h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .milibro .libro-milibro-contenido h1 {
+    font-size: 32px;
+  }
+}
+
+.milibro .libro-milibro-contenido .libro-subtitulo {
+  font-size: 20px;
+  color: color-mix(in srgb, var(--heading-color), transparent 20%);
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .milibro .libro-milibro-contenido .libro-subtitulo {
+    font-size: 18px;
+  }
+}
+
+.milibro .libro-milibro-contenido .autor {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.milibro .libro-milibro-contenido .autor span {
+  font-size: 16px;
+  color: var(--default-color);
+}
+
+.milibro .libro-milibro-contenido  .autor h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--heading-color);
+}
+
+.milibro .libro-milibro-contenido .libro-descripcion {
+  margin-bottom: 32px;
+  color: var(--default-color);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.milibro .libro-milibro-contenido .milibro-cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.milibro .libro-milibro-contenido .milibro-cta .btn-primary {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: grid;
+  place-items: center;
+}
+
+.milibro .libro-milibro-contenido .milibro-cta .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  transform: translateY(-3px);
+}
+
+.milibro .libro-milibro-contenido .milibro-cta .btn-outline {
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: grid;
+  place-items: center;
+}
+
+.milibro .libro-milibro-contenido .milibro-cta .btn-outline:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  transform: translateY(-3px);
+}
+
+.milibro .book-cover {
+  position: relative;
+  transform: rotate(-3deg);
+  transition: all 0.5s ease;
+  max-width: 100%;
+  max-height:100%;
+  
+}
+
+.milibro .book-cover .book-shadow {
+  position: absolute;
+  bottom: -20px;
+  left: 10%;
+  width: 80%;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  filter: blur(15px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.milibro .book-cover:hover {
+  transform: rotate(-10deg) translateY(-10px);
+  max-width:100%;
+  max-height:100%;
+}
+
+.milibro .book-cover:hover {
+  max-width:100%;
+  max-height:100%;
+  filter: brightness(1.05);
+  transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+  .milibro {
+    padding: 100px 0 60px;
+  }
+
+  .milibro .book-cover {
+    margin-top: 40px;
+    transform: rotate(0);
+  }
+
+  .milibro .book-cover:hover {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .milibro {
+    text-align: center;
+    padding: 80px 0 40px;
+  }
+
+  .milibro .libro-milibro-contenido .author {
+    justify-content: center;
+  }
+
+  .milibro .libro-milibro-contenido .milibro-cta {
+    justify-content: center;
+  }
+
+  .milibro .book-cover {
+    margin: 40px auto 0;
+  }
+}
+
+/* seccion acerca de */
+acercade .acercade-libro-imagen img {
+max-width:100%;
+max-height:100%;
+}
+acercade .acercade-libro-imagen img:hover {
+    transform: translateY(-10px);
+	max-width:100%;
+	max-height:100%;
+}
+
+.acercade .acercade-libro-imagen .detalles-libro {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: color-mix(in srgb, var(--surface-color), transparent 20%);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.acercade .acercade-libro-imagen .detalles-libro .detalle-item {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.acercade .acercade-libro-imagen .detalles-libro .detalle-item i {
+  font-size: 20px;
+  color: var(--accent-color);
+}
+
+.acercade .acercade-libro-imagen .detalles-libro .detalle-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.acercade .acercade-libro-imagen .detalles-libro .detalle-item div span {
+  font-size: 12px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-bottom: 2px;
+}
+
+.acercade .acercade-libro-imagen .detalles-libro .detalle-item div p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--heading-color);
+}
+
+
+.acercade .acercade-contenido .categoria {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.acercade .acercade-contenido .categoria span {
+  font-size: 14px;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.acercade .acercade-contenido .categoria span i {
+  font-size: 16px;
+}
+
+.caracteristicas .capcaracter {
+  margin-top: 50px;
+  background-color: var(--surface-color);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.caracteristicas .capcaracter h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.caracteristicas .capcaracter h3::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+.caracteristicas .capcaracter .cap-cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .caracteristicas .capcaracter .cap-cuadricula {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+.caracteristicas .capcaracter .cap-cuadricula .cap-elemento {
+  text-align: left;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: color-mix(in srgb, var(--background-color), transparent 5%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.caracteristicas .capcaracter .cap-cuadricula .cap-elemento .capitulonro {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent-color);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.caracteristicas .capcaracter .cap-cuadricula .cap-elemento h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 10px;
+}
+
+.caracteristicas .capcaracter .cap-cuadricula .cap-elemento p {
+  font-size: 14px;
+  color: var(--default-color);
+  margin-bottom: 0;
+}
+
+.caracteristicas .capcaracter .cap-cuadricula .capitulonro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+@media (max-width: 992px) {
+  .caracteristicas .section-intro h2 {
+    font-size: 28px;
+  }
+
+  .caracteristicas .capcaracter {
+    padding: 30px;
+  }
+}
+
+
+
+
