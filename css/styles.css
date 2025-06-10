@@ -16,7 +16,7 @@
   --heading-color: #FFFA92; /* Color de los titulos del index*/
   --accent-color: #29EA9C; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #004E23; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --contrast-color: #FF6800; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 /* Reset básico */
 * {
@@ -1149,5 +1149,19 @@ acercade .acercade-libro-imagen img:hover {
   visibility: visible;
   opacity: 1;
   bottom: 15px;
+}
+
+
+.original {
+  font-size: 18px;
+  color: color-mix(in srgb, var(--contrast-color), transparent 30%);
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+
+.discounted {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent-color);
 }
 
