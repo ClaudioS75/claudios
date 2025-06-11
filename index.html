@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="Ejemplo de HTML5" />
-		<meta name="keywords" content="HTML5, CSS3, JavaScript, UNO,Polo Marcos Paz" />
+		<meta name="keywords" content="HTML5, CSS3, JavaScript, UNO,Polo Marcos Paz refugio 665 claudio segura noticias distopico marcos paz" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Polo universitario Marcos Paz - Claudio Segura ejemplo Diario Distopico</title>
 		<link rel="shortcut icon" type="image/gif" href="favicon.ico">
@@ -93,8 +93,8 @@
 					  </ul>
 					</li>
 						</ul>
-						<form class="d-flex" role="search">
-							<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+						<form class="d-flex" role="search" id="findform">
+							<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="googquery">
 							<button class="btn btn-outline-success" type="submit">Buscar</button>
 						</form>
 					</div>
@@ -410,7 +410,7 @@
 									<span class="discounted">20% off $43.99</span>
 								</div>
 								<a href="#" class="btn btn-success mb-3">Comprar ahora</a>
-								<img src="img/novagreen12special.png" alt="Consigue el paquete" class="rounded mx-auto d-block float-end">
+								<img src="img/novagreen12special.png" alt="Consigue el paquete" class="rounded mx-auto d-block float-end img-fluid">
 							</div>
 						</div>
 						<div class="col">
@@ -480,6 +480,19 @@
 
 			window.addEventListener('load', toggleScrollTop);
 			document.addEventListener('scroll', toggleScrollTop);
+			const f = document.getElementById('findform');
+			const q = document.getElementById('googquery');
+			const google = 'https://www.google.com/search?q=site%3A+';
+			const site = 'https://claudios75.github.io/claudios/';
+
+			function submitted(event) {
+			  event.preventDefault();
+			  const url = google + site + '+' + q.value;
+			  const win = window.open(url, '_blank');
+			  win.focus();
+			}
+
+			f.addEventListener('submit', submitted);
 
 		</script>   
        

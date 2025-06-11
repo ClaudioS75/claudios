@@ -17,8 +17,8 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
 		-->
 		<!-- BOOTSTRAP 5 Bundle js-->
-		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 		<!-- SCROOLL REVEAL JS LIBRARY CDN -->
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 		<!-- AOS animacion -->
@@ -31,6 +31,8 @@
 		<!--link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=html" /-->
 		<!--link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite,home,search,settings" rel="stylesheet" /-->
+		<!-- google icons -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<!-- awesome -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- personales -->
@@ -113,14 +115,14 @@
 					  </ul>
 					</li>
 						</ul>
-						<form class="d-flex" role="search">
-							<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+						<form class="d-flex" role="search" id="findform">
+							<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="googquery">
 							<button class="btn btn-outline-success" type="submit">Buscar</button>
 						</form>
 					</div>
 				</div>
 			</nav>
-		</header>
+
 		<!-- Navegacion -->
 		<!-- principal -->
 		<main class="container-fluid my-5 text-dark bg-body">
@@ -336,13 +338,47 @@
             </article>
         </section>
         </main>
+        	<footer id="pie">Derechos Reservados &copy; 2025 - Claudio Segura&nbsp;<a id="muestra-hora"></a>			  <!-- Scroll Top -->
+		<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a></footer>
         <script>
-			AOS.init({
+						AOS.init({
 				duration: 1200,
 				once: true
 			});
 			setInterval(gethora, 1000);
+			/**
+			* Scroll top button
+			*/
+			let scrollTop = document.querySelector('.scroll-top');
+
+			function toggleScrollTop() {
+				if (scrollTop) {
+				  window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+				}
+			}
+			scrollTop.addEventListener('click', (e) => {
+				e.preventDefault();
+				window.scrollTo({
+				  top: 0,
+				  behavior: 'smooth'
+				});
+			});
+
+			window.addEventListener('load', toggleScrollTop);
+			document.addEventListener('scroll', toggleScrollTop);
+			const f = document.getElementById('findform');
+			const q = document.getElementById('googquery');
+			const google = 'https://www.google.com/search?q=site%3A+';
+			const site = 'https://claudios75.github.io/claudios/';
+
+			function submitted(event) {
+			  event.preventDefault();
+			  const url = google + site + '+' + q.value;
+			  const win = window.open(url, '_blank');
+			  win.focus();
+			}
+
+			f.addEventListener('submit', submitted);
 		</script>   
-        <footer id="pie">Derechos Reservados &copy; 2025 - Claudio Segura&nbsp;<a id="muestra-hora"></a></footer>
     </body>
 </html>
