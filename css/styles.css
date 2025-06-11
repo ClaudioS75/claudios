@@ -127,11 +127,11 @@ hgroup{
 	margin: 4% auto;
 	text-align: left;
 }
-img {
+ {
 	height: auto; 
 	width: auto; 
-	max-width: var(--img-notapx); font-family: Impact, Charcoal, sans-serif;
-	max-height: var(--img-notapx);
+	max-width: var(---notapx); font-family: Impact, Charcoal, sans-serif;
+	max-height: var(---notapx);
 }
 figcaption {
 	text-align: right;
@@ -231,7 +231,7 @@ column-width: 25em;
 }
 
 .nota{
-	background-image: url("img/fondodiario2.png");
+	background-image: url("../img/fondodiario2.png");
 	/*url("img/fondodiario1.png"),url("img/fondodiario2.png"); */
 	padding: 20px;
 	margin-bottom: 15px;
@@ -688,7 +688,7 @@ aside, #main {
 }
 
 .diario{
-	background-image: url("img/backgrounddiarios.png");
+	background-image: url("../img/backgrounddiarios.png");
 	/*url("img/fondodiario1.png"),url("img/fondodiario2.png"); */
 	padding: 20px;
 	margin-bottom: 15px;
